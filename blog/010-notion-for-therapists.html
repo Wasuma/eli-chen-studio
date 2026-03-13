@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion for Therapists: Client Records, Session Notes, and Progress Tracking | Blog</title>
+  <meta name="description" content="Build a HIPAA-friendly client management and case note system in Notion. Track client progress, manage session notes, and organize treatment plans—with privacy controls built in.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f9fafb;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    header .meta {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    article {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #667eea;
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: #764ba2;
+      margin: 1.5rem 0 0.75rem;
+      font-size: 1.2rem;
+    }
+    p { margin: 1rem 0; }
+    ul, ol {
+      margin: 1rem 0 1rem 2rem;
+      padding-left: 1rem;
+    }
+    li { margin: 0.5rem 0; }
+    code {
+      background: #f3f4f6;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      color: #666;
+    }
+    .callout {
+      background: #efffef;
+      border-left: 4px solid #667eea;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+    .affiliate {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    .warning {
+      background: #ffe0e0;
+      border-left: 4px solid #e74c3c;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .toc {
+      background: #f3f4f6;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin: 2rem 0;
+    }
+    .toc h3 { margin-top: 0; }
+    .toc ul { margin: 0.5rem 0; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Notion for Therapists: Client Records, Session Notes, and Progress Tracking</h1>
+    <div class="meta">Published March 2026 | 11 minute read</div>
+  </header>
+
+  <main>
+    <article>
+      <div class="warning">
+        <strong>HIPAA Compliance Note:</strong> Notion is not HIPAA-certified by default. If you work with protected health information (PHI), verify your Notion setup includes encrypted storage and access controls, or use a HIPAA-certified alternative like SimplePractice or TherapyNotes for full compliance. This guide assumes you're using Notion for non-PHI organizational tasks (scheduling, treatment planning structures, progress metrics).
+      </div>
+
+      <p>Therapists, counselors, and mental health professionals manage complex client information: intake forms, session notes, treatment plans, progress metrics, and case files. Most mental health providers use fragmented systems: paper records, email threads, separate scheduling apps, and scattered notes. The result? You spend more time searching for client information than actually helping clients. This Notion workspace organizes your practice administration in one searchable, secure, organized system.</p>
+
+      <p><strong>Notion can centralize your client records, session documentation, and outcome tracking—while keeping client data organized and accessible during sessions.</strong></p>
+
+      <h2>Why Notion for Mental Health Professionals</h2>
+
+      <ol>
+        <li><strong>Centralized records</strong> — Client intake forms, assessment results, treatment plans, and session notes all linked together</li>
+        <li><strong>Quick session prep</strong> — Look up client history, previous notes, and progress in seconds</li>
+        <li><strong>Outcome tracking</strong> — Document progress on treatment goals, symptom changes, and client wins</li>
+        <li><strong>Customizable structure</strong> — Build templates matching your specific therapeutic approach</li>
+        <li><strong>Secure (when set up correctly)</strong> — Private workspace with password protection and permission controls</li>
+        <li><strong>Cost-effective</strong> — Free alternative to SimplePractice ($66+/month) or TherapyNotes ($100+/month)</li>
+      </ol>
+
+      <h2>What You Can Track in Notion</h2>
+
+      <h3>Client Profiles</h3>
+      <ul>
+        <li>Demographics: name, age, contact info, emergency contact, referred by</li>
+        <li>Presenting issues: primary concern, secondary concerns, symptom severity</li>
+        <li>History: family background, trauma history, previous treatment, medications</li>
+        <li>Assessment results: PHQ-9, GAD-7, ACE scores, diagnostic impressions</li>
+        <li>Treatment plan: goals, modalities used (CBT, DBT, psychodynamic, etc.), frequency</li>
+        <li>Linked session notes, progress metrics, and outcome measures</li>
+      </ul>
+
+      <h3>Session Documentation</h3>
+      <ul>
+        <li>Session template: date, duration, topics discussed, homework assigned</li>
+        <li>Clinical notes: what was addressed, client insights, breakthroughs</li>
+        <li>Goals progress: check current progress on treatment plan goals</li>
+        <li>Observations: mood, affect, engagement, any concerning changes</li>
+        <li>Plan for next session: areas to explore, skills to practice, resources to share</li>
+      </ul>
+
+      <h3>Treatment Plans</h3>
+      <ul>
+        <li>Define 3-5 SMART goals (specific, measurable, achievable, relevant, time-bound)</li>
+        <li>Track interventions: which therapeutic techniques used for each goal</li>
+        <li>Progress indicators: measurable signs of improvement</li>
+        <li>Review dates: when to reassess goals and adjust treatment</li>
+      </ul>
+
+      <h3>Progress Metrics</h3>
+      <ul>
+        <li>Symptom tracking: anxiety level, depression score, sleep quality (weekly check-ins)</li>
+        <li>Goal progress: % toward completion of each treatment goal</li>
+        <li>Outcome measures: standardized assessments (PHQ-9, GAD-7) monthly or quarterly</li>
+        <li>Graphs and trends: visual tracking of improvement over time</li>
+      </ul>
+
+      <h3>Clinical Dashboard</h3>
+      <ul>
+        <li>This week's sessions: calendar view of all scheduled clients</li>
+        <li>Clients needing review: whose treatment goals need reassessment?</li>
+        <li>Outcome trends: which clients show improvement? any regressions?</li>
+        <li>Administrative: insurance follow-ups, referrals sent, consultation requests</li>
+      </ul>
+
+      <h2>Core Databases for Therapists</h2>
+
+      <div class="toc">
+        <h3>Essential Tables</h3>
+        <ul>
+          <li><strong>Clients</strong> — Name, age, diagnosis, treatment status, primary issue</li>
+          <li><strong>Intake Forms</strong> — Full intake information, assessment results, consent</li>
+          <li><strong>Treatment Plans</strong> — Goals, interventions, progress indicators, review date</li>
+          <li><strong>Session Notes</strong> — Date, topics, observations, homework, next steps</li>
+          <li><strong>Outcome Measures</strong> — PHQ-9, GAD-7, symptom tracking, assessment dates</li>
+          <li><strong>Progress Tracking</strong> — Client-reported progress, goal completion %, milestones</li>
+        </ul>
+      </div>
+
+      <h2>How to Set Up Your Practice System</h2>
+
+      <ol>
+        <li>Create a private Notion workspace for your practice</li>
+        <li>Set up core databases: Clients, Intake Forms, Treatment Plans, Session Notes, Outcome Measures</li>
+        <li>Create intake form template with standard questions for your practice</li>
+        <li>Build session note template matching your documentation style</li>
+        <li>Create views for your workflow:
+          <ul>
+            <li>Client roster: status (active, completed, paused), next appointment</li>
+            <li>This week's sessions: calendar and list view</li>
+            <li>Clients needing goal review</li>
+            <li>Outcome measures due for administration</li>
+          </ul>
+        </li>
+        <li>Add formulas for useful calculations:
+          <ul>
+            <li>Days since last session</li>
+            <li>Treatment plan age (when should it be reviewed?)</li>
+            <li>Average progress on treatment goals</li>
+          </ul>
+        </li>
+        <li>Set password protection and limit access to only you</li>
+      </ol>
+
+      <h2>Real Example: Solo Therapy Practice</h2>
+
+      <p>Maria, a licensed therapist in private practice, sees 20 active clients weekly. Using Notion, she:</p>
+
+      <ul>
+        <li>Prepares for each session by reviewing previous notes (30 seconds per client)</li>
+        <li>Documents sessions immediately after (5-7 minutes per note)</li>
+        <li>Tracks client progress on treatment goals monthly</li>
+        <li>Reviews outcome measures (PHQ-9/GAD-7) quarterly to measure change</li>
+        <li>Identifies clients needing treatment plan updates</li>
+      </ul>
+
+      <p>Before Notion, Maria spent 1-2 hours per week searching for client files, flipping through paper records, and organizing notes. Now it takes 15 minutes. She never misses a treatment plan review and can show clients their progress graphs during sessions.</p>
+
+      <h2>Template Customization Ideas</h2>
+
+      <ul>
+        <li><strong>Modality-specific templates</strong> — CBT-focused templates with thought records, DBT templates with skills checklists, psychodynamic templates with transference notes</li>
+        <li><strong>Population-specific</strong> — Trauma-informed templates, child/adolescent specialized fields, couples therapy templates</li>
+        <li><strong>Outcome automation</strong> — Reminder to administer PHQ-9 every 3 months; auto-calculate trend vs. baseline</li>
+        <li><strong>Consultation requests</strong> — Track collateral contacts, requests to other providers, consultation notes</li>
+      </ul>
+
+      <h2>Privacy & Security Considerations</h2>
+
+      <ul>
+        <li>Use a strong, unique password for your Notion workspace</li>
+        <li>Enable two-factor authentication on your Notion account</li>
+        <li>Keep the workspace private (not shared, not shared publicly)</li>
+        <li>For HIPAA compliance, verify your Notion setup with your IT/compliance team or use a certified alternative</li>
+        <li>Consider encrypting client names or using client IDs instead</li>
+        <li>Regularly backup your data (Notion has native export options)</li>
+      </ul>
+
+      <h2>Resources for Mental Health Professionals</h2>
+
+      <p><a href="https://amazon.com/s?k=therapy+treatment+planning&tag=elichenstudio-20" target="_blank">Treatment Planning and Documentation Books</a></p>
+
+      <p><a href="https://amazon.com/s?k=clinical+assessment+tools&tag=elichenstudio-20" target="_blank">Clinical Assessment Tools and Resources</a></p>
+
+      <div class="affiliate">
+        <strong>Affiliate Note:</strong> Links above are Amazon affiliate links (tag: elichenstudio-20). We earn a small commission if you purchase through these links at no additional cost to you.
+      </div>
+
+      <div class="callout">
+        <strong>Ready to consolidate your practice?</strong> EliChenStudio offers a ready-made Notion template for therapists with intake forms, session note templates, treatment plan tracking, and outcome measure integration. All you need to do is customize for your practice modality and start adding clients. <a href="https://wasuma.github.io/eli-chen-studio/">Browse our templates</a>.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eli Chen Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
