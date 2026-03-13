@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Build a Therapist Notion Workspace | Complete Guide</title>
+  <meta name="description" content="Complete guide to setting up a Notion workspace for therapists. Includes templates for session notes, treatment plans, and client management with HIPAA considerations.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f9fafb;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    header .meta {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    article {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #667eea;
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: #764ba2;
+      margin: 1.5rem 0 0.75rem;
+      font-size: 1.2rem;
+    }
+    p { margin: 1rem 0; }
+    ul, ol {
+      margin: 1rem 0 1rem 2rem;
+      padding-left: 1rem;
+    }
+    li { margin: 0.5rem 0; }
+    code {
+      background: #f3f4f6;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      color: #666;
+    }
+    .callout {
+      background: #efefff;
+      border-left: 4px solid #667eea;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+    .affiliate {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .toc {
+      background: #f3f4f6;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin: 2rem 0;
+    }
+    .toc h3 { margin-top: 0; }
+    .toc ul { margin: 0.5rem 0; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>How to Build a Therapist Notion Workspace</h1>
+    <div class="meta">Complete setup guide with templates and best practices | 8 min read</div>
+  </header>
+
+  <main>
+    <article>
+      <div class="toc">
+        <h3>In This Guide</h3>
+        <ul>
+          <li><a href="#setup">Setting Up Your Workspace</a></li>
+          <li><a href="#databases">Core Databases (Clients, Sessions, Notes)</a></li>
+          <li><a href="#templates">Pre-built Templates You Can Use</a></li>
+          <li><a href="#hipaa">HIPAA Considerations</a></li>
+          <li><a href="#workflow">Daily Workflow Integration</a></li>
+          <li><a href="#tools">Complementary Tools</a></li>
+        </ul>
+      </div>
+
+      <h2 id="setup">1. Setting Up Your Notion Workspace</h2>
+
+      <p>Before building, understand that Notion has two pricing tiers relevant to therapists:</p>
+      <ul>
+        <li><strong>Free Personal Plan</strong> — best for solo practitioners, all core features</li>
+        <li><strong>$10/month Team Plan</strong> — allows you to invite staff, share templates, manage permissions</li>
+      </ul>
+
+      <p>Most private practice therapists use the Free plan. It includes unlimited pages, databases, and up to 10 guest access links.</p>
+
+      <div class="callout">
+        <strong>Pro tip:</strong> Start with Free and upgrade only if you're adding staff to your practice. You can upgrade anytime without losing data.
+      </div>
+
+      <h3>Initial Workspace Structure</h3>
+      <p>Create a simple top-level structure with these main sections:</p>
+      <ol>
+        <li><strong>Clients</strong> — Master client database</li>
+        <li><strong>Sessions</strong> — Scheduling and session records</li>
+        <li><strong>Clinical Notes</strong> — Your session documentation (SOAP/DAP)</li>
+        <li><strong>Treatment Plans</strong> — Treatment planning and goals</li>
+        <li><strong>Admin</strong> — Billing, forms, compliance checklists</li>
+      </ol>
+
+      <h2 id="databases">2. Core Databases Every Therapist Needs</h2>
+
+      <h3>Database 1: Clients</h3>
+      <p>Your master client database should include:</p>
+      <ul>
+        <li>Client name (encrypted or initials if privacy-sensitive)</li>
+        <li>Contact information (phone, email, emergency contact)</li>
+        <li>Diagnosis/presenting issues (brief summary)</li>
+        <li>Intake date and current status (active, paused, discharged)</li>
+        <li>Primary clinician assigned</li>
+        <li>Insurance (if applicable) and billing status</li>
+        <li>Sessions count (rolled up from Sessions database)</li>
+      </ul>
+
+      <div class="affiliate">
+        💡 <strong>Template Recommendation:</strong> Our Therapist Notion Template includes a pre-configured client database that you can customize in minutes. <a href="/therapist-notion-workspace.html">See the full setup guide</a> for step-by-step instructions.
+      </div>
+
+      <h3>Database 2: Sessions</h3>
+      <p>Track all client sessions with these properties:</p>
+      <ul>
+        <li>Client (relation to Clients database)</li>
+        <li>Session date and time</li>
+        <li>Duration (in minutes)</li>
+        <li>Status (scheduled, completed, cancelled, no-show)</li>
+        <li>Notes (linked to Clinical Notes database)</li>
+        <li>Billable (yes/no for insurance tracking)</li>
+      </ul>
+
+      <h3>Database 3: Clinical Notes</h3>
+      <p>This is where the actual session documentation happens. Use the SOAP format (or DAP if you prefer):</p>
+      <ul>
+        <li><strong>S (Subjective):</strong> What client reported</li>
+        <li><strong>O (Objective):</strong> What you observed</li>
+        <li><strong>A (Assessment):</strong> Your clinical impression</li>
+        <li><strong>P (Plan):</strong> Next steps and interventions</li>
+      </ul>
+
+      <p>Each note links to:</p>
+      <ul>
+        <li>Session (relation to Sessions database)</li>
+        <li>Client (for quick filtering)</li>
+        <li>Treatment goals addressed (relation to Treatment Plans)</li>
+        <li>Tags (for searching by topic, e.g., "anxiety," "medication adjustment")</li>
+      </ul>
+
+      <h2 id="templates">3. Pre-built Templates You Can Use Today</h2>
+
+      <p>Rather than building from scratch, using battle-tested templates saves weeks of setup. Here are what production-ready therapist Notion workspaces typically include:</p>
+
+      <h3>Session Note Template</h3>
+      <p>A template form that appears every time you create a new note. It prompts for SOAP structure and includes optional fields for:</p>
+      <ul>
+        <li>Mood check-in (1-10 scale)</li>
+        <li>Presenting issue</li>
+        <li>Interventions used</li>
+        <li>Homework assigned</li>
+        <li>Suicide/harm risk assessment (yes/no, with escalation checklist)</li>
+        <li>Next appointment date</li>
+      </ul>
+
+      <h3>Treatment Plan Template</h3>
+      <p>Document client goals with measurable outcomes:</p>
+      <ul>
+        <li>Primary issue (e.g., anxiety, depression, relationship conflict)</li>
+        <li>Specific treatment goals (SMART format: Specific, Measurable, Achievable, Relevant, Time-bound)</li>
+        <li>Interventions planned (CBT, DBT, psychodynamic, etc.)</li>
+        <li>Progress tracking linked to session notes</li>
+        <li>Plan review dates</li>
+      </ul>
+
+      <h3>Intake Form</h3>
+      <p>A Notion form you send to clients before first session. Captures:</p>
+      <ul>
+        <li>Demographic information</li>
+        <li>Medical history and current medications</li>
+        <li>Insurance information</li>
+        <li>Emergency contacts</li>
+        <li>Informed consent acknowledgment</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Efficiency Win:</strong> Notion forms auto-populate your Clients database. Client submits intake → database entry created automatically. Zero manual data entry.
+      </div>
+
+      <h2 id="hipaa">4. HIPAA Considerations</h2>
+
+      <p>Notion is not itself HIPAA-compliant, but you can use it securely for therapy practice with these safeguards:</p>
+
+      <ul>
+        <li><strong>Encrypt at rest:</strong> Notion data is encrypted in transit and at rest by default</li>
+        <li><strong>Access control:</strong> Use Notion's permission system. Guest access = no access to sensitive pages</li>
+        <li><strong>Use initials or codes instead of full names</strong> for session notes if you're particularly concerned</li>
+        <li><strong>Two-factor authentication:</strong> Enable on your Notion account</li>
+        <li><strong>Never share links publicly</strong> — all sharing should be invite-only</li>
+        <li><strong>Consider:</strong> For highly sensitive notes, use a separate password-protected Notion space</li>
+      </ul>
+
+      <div class="affiliate">
+        📋 <strong>Compliance Checklist:</strong> Our templates include a HIPAA compliance checklist to audit your workspace. Download and run quarterly to ensure your setup stays secure.
+      </div>
+
+      <h2 id="workflow">5. Daily Workflow Integration</h2>
+
+      <p>Here's how a real therapist uses this system in practice:</p>
+
+      <h3>Before the day starts:</h3>
+      <ol>
+        <li>Check your calendar in Notion Sessions database (sorted by date)</li>
+        <li>Review previous notes for clients you're seeing today</li>
+        <li>Prepare any session materials (homework from last time, treatment plan review)</li>
+      </ol>
+
+      <h3>During the session:</h3>
+      <ol>
+        <li>Have your Session Notes template open (or write notes after session)</li>
+        <li>Use the SOAP template to structure your notes in real-time</li>
+      </ol>
+
+      <h3>After the session:</h3>
+      <ol>
+        <li>Complete the SOAP note with Assessment and Plan</li>
+        <li>Log any interventions, homework, next appointment</li>
+        <li>Update treatment plan progress if session addressed a goal</li>
+        <li>Bill the session (mark as billable, log insurance submission if applicable)</li>
+      </ol>
+
+      <h3>Weekly:</h3>
+      <ul>
+        <li>Review progress toward treatment goals for active clients</li>
+        <li>Flag clients approaching plan review dates</li>
+        <li>Check for no-shows or cancellations to follow up</li>
+      </ul>
+
+      <h2 id="tools">6. Complementary Tools to Complete Your Stack</h2>
+
+      <p>Notion is powerful on its own, but pairing it with 2-3 focused tools creates a complete practice management system:</p>
+
+      <h3>Scheduling: Google Calendar (Free)</h3>
+      <p>For client appointment reminders and block scheduling. Notion can display your Google Calendar, or use a simple email reminder system.</p>
+      <p><a href="https://www.amazon.com/Google-Cloud-Search-Integration-Optimization/s?k=productivity&tag=elichenstudio-20" target="_blank">See productivity and scheduling tools on Amazon →</a></p>
+
+      <h3>Video Conferencing: Zoom or Jitsi (Free)</h3>
+      <p>If you do telehealth, embed your Zoom meeting links in Notion session records. Clients can join directly from your note.</p>
+      <p><a href="https://www.amazon.com/s?k=webcam+microphone&tag=elichenstudio-20" target="_blank">Audio/video equipment on Amazon →</a></p>
+
+      <h3>Backup & Security: Backblaze (paid) or OneDrive (free)</h3>
+      <p>Regular backups of your Notion workspace protect against accidental deletion or security incidents.</p>
+      <p><a href="https://www.amazon.com/s?k=external+hard+drive&tag=elichenstudio-20" target="_blank">External drives and backup solutions on Amazon →</a></p>
+
+      <h3>Optional: Waiting Room/Check-in: Acuity Scheduling (paid) or Calendly (free)</h3>
+      <p>Clients book appointments and check in. Can integrate with your Notion Sessions database.</p>
+
+      <div class="callout">
+        <strong>Our Recommendation:</strong> Start with Notion + Google Calendar + Zoom. These three are free (or low-cost) and cover scheduling, notes, video sessions, and billing tracking.
+      </div>
+
+      <h2>Getting Started Today</h2>
+
+      <p>The templates and structure above represent weeks of trial-and-error distilled into best practices. Instead of building from scratch, consider using a production-ready template as your starting point. You'll be running a fully documented therapy practice in your Notion workspace within hours, not weeks.</p>
+
+      <p><a href="/therapist-notion-workspace.html" style="display: inline-block; background: #667eea; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; margin-top: 1rem;">Browse Therapist Templates →</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eli Chen Studio.</p>
+    <p>This article contains affiliate links to Amazon. We may earn a small commission if you purchase through these links at no extra cost to you.</p>
+  </footer>
+</body>
+</html>
