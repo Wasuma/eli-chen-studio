@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notion Templates for Mental Health Professionals | Eli Chen Studio</title>
-  <meta name="description" content="Digital Notion templates and productivity tools designed specifically for therapists, counselors, and mental health professionals. Save time on documentation and focus on your clients.">
+  <title>Notion for Every Profession | Blog & Learning Center | EliChenStudio</title>
+  <meta name="description" content="Learn how to use Notion for your profession. Blog posts covering Notion templates and systems for lawyers, therapists, freelancers, students, business owners, nonprofits, coaches, and more.">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #333;
       background: #f9fafb;
     }
@@ -19,189 +19,278 @@
       padding: 3rem 2rem;
       text-align: center;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
     header p {
       font-size: 1.1rem;
       opacity: 0.95;
-    }
-    nav {
-      background: #fff;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      max-width: 1200px;
+      max-width: 600px;
       margin: 0 auto;
-      justify-content: center;
     }
-    nav a {
-      text-decoration: none;
-      color: #667eea;
-      font-weight: 500;
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
     }
-    nav a:hover { color: #764ba2; }
-    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-    section {
+    .intro {
       background: white;
       padding: 2rem;
-      margin: 2rem 0;
       border-radius: 8px;
+      margin-bottom: 3rem;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .intro h2 {
+      color: #667eea;
+      margin-bottom: 1rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .blog-card h3 {
+      color: #667eea;
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+    .blog-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin: 0.5rem 0;
+      line-height: 1.5;
+    }
+    .blog-card .meta {
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 1rem;
+    }
+    .category {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #667eea;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 0.5rem 0.25rem 0 0;
     }
     h2 {
       color: #667eea;
-      margin-bottom: 1rem;
+      margin: 2rem 0 1.5rem;
       font-size: 1.8rem;
     }
-    h3 {
-      color: #764ba2;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    .card {
-      background: #f9fafb;
-      padding: 1.5rem;
-      border-radius: 6px;
-      border-left: 4px solid #667eea;
-    }
-    .card h3 { margin-top: 0; }
-    a.btn {
-      display: inline-block;
-      background: #667eea;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
-    a.btn:hover { background: #764ba2; }
     footer {
       text-align: center;
       padding: 2rem;
       color: #666;
       border-top: 1px solid #eee;
       margin-top: 3rem;
+      font-size: 0.9rem;
     }
-    .highlight { background: #fff3cd; padding: 1rem; border-radius: 4px; margin: 1rem 0; }
+    .cta {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta h3 {
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+    .cta a {
+      color: white;
+      text-decoration: underline;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Eli Chen Studio</h1>
-    <p>Notion Templates for Mental Health Professionals</p>
+    <h1>Notion for Every Profession</h1>
+    <p>Learn how to build productivity systems, manage your practice, and scale your work using Notion.</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="/therapist-notion-workspace.html">Therapist Templates</a></li>
-      <li><a href="/adhd-productivity-guide.html">ADHD & Productivity</a></li>
-      <li><a href="/tools-recommendations.html">Recommended Tools</a></li>
-      <li><a href="#blog">Blog</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section id="home">
-      <h2>Digital Efficiency for Mental Health Professionals</h2>
-      <p>Managing a therapeutic practice involves countless moving pieces: client notes, session schedules, treatment plans, billing, and documentation. Many practitioners still rely on scattered systems—some pen and paper, some spreadsheets, some disconnected apps. This fragmentation costs time and can impact the quality of client care.</p>
+    <div class="intro">
+      <h2>Welcome to the Notion Blog</h2>
+      <p>Whether you're a therapist managing client records, a small business owner running operations, a student organizing your academic life, or a freelancer juggling multiple clients—Notion can be your complete management system.</p>
+      <p>Each guide below covers how to build a tailored Notion workspace for your specific profession, with real examples, step-by-step setup instructions, and templates you can customize.</p>
+    </div>
 
-      <p>At Eli Chen Studio, we create ready-to-use Notion templates specifically designed for mental health professionals. Our templates are built by someone who understands the actual workflow of therapists, counselors, and coaches—not just generic productivity templates adapted for your field.</p>
+    <h2>Blog Posts by Category</h2>
 
-      <div class="highlight">
-        <strong>Why Notion for therapy practices?</strong> Notion is free (or $10/month for teams), fully customizable, HIPAA-compliant-capable, works offline, and syncs across all your devices. It's the only tool you need for scheduling, notes, treatment plans, and client records.
-      </div>
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Healthcare & Wellness</h3>
+    <div class="blog-grid">
+      <a href="010-notion-for-therapists.html" class="blog-card">
+        <h3>Notion for Therapists</h3>
+        <p>Build a HIPAA-friendly client management system with session notes, treatment plans, and outcome tracking.</p>
+        <span class="category">Mental Health</span>
+        <div class="meta">~11 min read</div>
+      </a>
+      <a href="010-notion-for-therapists.html" class="blog-card">
+        <h3>Notion for Therapists</h3>
+        <p>Build a HIPAA-friendly client management system with session notes, treatment plans, and outcome tracking.</p>
+        <span class="category">Mental Health</span>
+        <div class="meta">~11 min read</div>
+      </a>
+      <a href="014-notion-for-occupational-therapists.html" class="blog-card">
+        <h3>Notion for Occupational Therapists</h3>
+        <p>Track functional goals, interventions, ADL outcomes, and insurance justification in one workspace.</p>
+        <span class="category">Healthcare</span>
+        <div class="meta">~10 min read</div>
+      </a>
+      <a href="009-notion-for-fitness-coaches.html" class="blog-card">
+        <h3>Notion for Fitness Coaches</h3>
+        <p>Client management, workout programs, progress tracking, and accountability systems for coaches.</p>
+        <span class="category">Wellness</span>
+        <div class="meta">~9 min read</div>
+      </a>
+      <a href="015-notion-for-nurses.html" class="blog-card">
+        <h3>Notion for Nurses</h3>
+        <p>Shift planning, clinical learning journal, certification tracking, and career documentation for nurses.</p>
+        <span class="category">Nursing</span>
+        <div class="meta">~10 min read</div>
+      </a>
+    </div>
 
-      <div class="grid">
-        <div class="card">
-          <h3>🎯 Save 5+ Hours Per Week</h3>
-          <p>Pre-built templates eliminate setup time. Use immediately instead of spending weeks building your system from scratch.</p>
-        </div>
-        <div class="card">
-          <h3>📋 Legally Sound Documentation</h3>
-          <p>Templates include fields for legally required documentation: treatment planning, progress notes, and session records that satisfy most licensing requirements.</p>
-        </div>
-        <div class="card">
-          <h3>🔒 Complete Privacy Control</h3>
-          <p>Your data stays in your Notion workspace. No third-party access, no vendor lock-in. You own everything.</p>
-        </div>
-        <div class="card">
-          <h3>🚀 Built for Scale</h3>
-          <p>Templates work whether you're a solo practitioner or running a team of 10. Add therapists, share templates, scale without switching platforms.</p>
-        </div>
-      </div>
-    </section>
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Business & Entrepreneurship</h3>
+    <div class="blog-grid">
+      <a href="011-notion-for-small-business.html" class="blog-card">
+        <h3>Notion for Small Business</h3>
+        <p>Complete operations hub: CRM, project management, inventory, finances, and team coordination.</p>
+        <span class="category">Business</span>
+        <div class="meta">~10 min read</div>
+      </a>
+      <a href="003-notion-for-freelancers.html" class="blog-card">
+        <h3>Notion for Freelancers</h3>
+        <p>Client management, project tracking, invoicing, time logging, and revenue monitoring for independent professionals.</p>
+        <span class="category">Freelancing</span>
+        <div class="meta">~8 min read</div>
+      </a>
+      <a href="002-notion-for-small-business.html" class="blog-card">
+        <h3>Notion for Small Business Teams</h3>
+        <p>Scale your business with unified client management, project coordination, and financial tracking.</p>
+        <span class="category">Business</span>
+        <div class="meta">~8 min read</div>
+      </a>
+    </div>
 
-    <section>
-      <h2>What's Included in Our Templates</h2>
-      <p>Each template package is customized for your specific role. Whether you're a therapist, counselor, school psychologist, or life coach, we have a version designed for your workflow.</p>
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Education & Learning</h3>
+    <div class="blog-grid">
+      <a href="012-notion-for-students.html" class="blog-card">
+        <h3>Notion for Students</h3>
+        <p>Study system, note organization, research management, exam prep, and grade tracking.</p>
+        <span class="category">Education</span>
+        <div class="meta">~9 min read</div>
+      </a>
+      <a href="004-notion-for-students.html" class="blog-card">
+        <h3>Notion for Student Success</h3>
+        <p>Master your classes with organized notes, assignment tracking, and exam preparation systems.</p>
+        <span class="category">Education</span>
+        <div class="meta">~8 min read</div>
+      </a>
+      <a href="019-notion-for-thesis-researchers.html" class="blog-card">
+        <h3>Notion for Thesis & Research</h3>
+        <p>Organize research sources, manage citations, track your argument, and write your thesis or dissertation.</p>
+        <span class="category">Research</span>
+        <div class="meta">~10 min read</div>
+      </a>
+    </div>
 
-      <h3>Standard Features in All Templates:</h3>
-      <ul style="margin: 1rem 0; padding-left: 2rem;">
-        <li>Client database with contact info and intake history</li>
-        <li>Session scheduler with built-in reminders</li>
-        <li>Clinical notes template (SOAP, DAP, or custom format)</li>
-        <li>Treatment plan generator</li>
-        <li>Progress tracking dashboards</li>
-        <li>Billing/session tracking</li>
-        <li>Document templates ready to export to PDF</li>
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Finance & Personal Development</h3>
+    <div class="blog-grid">
+      <a href="008-notion-for-personal-finance.html" class="blog-card">
+        <h3>Notion for Personal Finance</h3>
+        <p>Budget tracking, expense management, debt payoff, savings goals, and net worth monitoring.</p>
+        <span class="category">Finance</span>
+        <div class="meta">~10 min read</div>
+      </a>
+    </div>
+
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Legal & Professional Services</h3>
+    <div class="blog-grid">
+      <a href="001-notion-for-lawyers.html" class="blog-card">
+        <h3>Notion for Lawyers</h3>
+        <p>Case management, deadline tracking, client information, time logging, and billable hours tracking.</p>
+        <span class="category">Legal</span>
+        <div class="meta">~8 min read</div>
+      </a>
+      <a href="005-notion-for-hr.html" class="blog-card">
+        <h3>Notion for HR Professionals</h3>
+        <p>Onboarding workflows, employee records, performance tracking, and HR administration in one system.</p>
+        <span class="category">HR</span>
+        <div class="meta">~8 min read</div>
+      </a>
+    </div>
+
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Nonprofits & Community</h3>
+    <div class="blog-grid">
+      <a href="013-notion-for-nonprofits.html" class="blog-card">
+        <h3>Notion for Nonprofits</h3>
+        <p>Grant tracking, donor CRM, volunteer management, program coordination, and impact measurement.</p>
+        <span class="category">Nonprofit</span>
+        <div class="meta">~11 min read</div>
+      </a>
+      <a href="023-notion-for-nonprofits.html" class="blog-card">
+        <h3>Notion for Nonprofit Operations</h3>
+        <p>Complete nonprofit hub: grants, donors, volunteers, programs, and impact tracking.</p>
+        <span class="category">Nonprofit</span>
+        <div class="meta">~10 min read</div>
+      </a>
+    </div>
+
+    <h3 style="color: #764ba2; font-size: 1.3rem; margin: 2rem 0 1rem;">Real Estate & Professional Services</h3>
+    <div class="blog-grid">
+      <a href="006-notion-for-real-estate.html" class="blog-card">
+        <h3>Notion for Real Estate Agents</h3>
+        <p>Lead management, transaction tracking, client CRM, and listing organization for real estate professionals.</p>
+        <span class="category">Real Estate</span>
+        <div class="meta">~9 min read</div>
+      </a>
+      <a href="022-notion-for-real-estate.html" class="blog-card">
+        <h3>Notion Template for Real Estate</h3>
+        <p>Complete transaction & lead management system for real estate agents and teams.</p>
+        <span class="category">Real Estate</span>
+        <div class="meta">~8 min read</div>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>Ready to Build Your Notion System?</h3>
+      <p>Browse our collection of ready-made, customizable Notion templates for your profession.</p>
+      <a href="https://wasuma.github.io/eli-chen-studio/">View Templates</a>
+    </div>
+
+    <h2>Why Notion?</h2>
+    <div class="intro">
+      <ul style="margin-left: 2rem;">
+        <li><strong>Free or low-cost</strong> — No expensive software subscriptions ($10-500/month for alternatives)</li>
+        <li><strong>Customizable</strong> — Adapt it to your exact workflow, not the other way around</li>
+        <li><strong>Integrated</strong> — No data silos; everything connects</li>
+        <li><strong>Scalable</strong> — Works the same whether you're solo or managing a team</li>
+        <li><strong>Privacy</strong> — Your data stays with you, not sold to third parties</li>
+        <li><strong>Automation-ready</strong> — Connect with Zapier for automated workflows</li>
       </ul>
-
-      <p style="margin-top: 1.5rem;"><strong>Popular specialty templates:</strong> We also offer focused templates for therapists working with specific populations—ADHD clients, trauma survivors, couples, or those in private practice transitioning from paper systems.</p>
-    </section>
-
-    <section id="blog">
-      <h2>From Our Blog</h2>
-      <p>In-depth guides on using Notion for different professions and life situations:</p>
-
-      <h3>Professional & Business</h3>
-      <ul style="margin: 1rem 0; padding-left: 2rem;">
-        <li><a href="/blog-001-notion-for-lawyers.html">Notion for Lawyers</a> — Build your case management, deadline tracking, and billing system</li>
-        <li><a href="/blog-002-notion-for-small-business.html">Notion for Small Business Owners</a> — Unify operations: finances, customers, projects, KPIs</li>
-        <li><a href="/blog-003-notion-for-freelancers.html">Notion for Freelancers</a> — Replace 5 apps with one system for projects, time, and invoicing</li>
-      </ul>
-
-      <h3>Education & Personal Development</h3>
-      <ul style="margin: 1rem 0; padding-left: 2rem;">
-        <li><a href="/blog-004-notion-for-students.html">Notion for Graduate Students</a> — Organize your thesis, research, and advisor feedback</li>
-        <li><a href="/blog-005-notion-for-hr.html">Notion for HR</a> — Standardize hiring, onboarding, and people management</li>
-      </ul>
-
-      <h3>Mental Health & Productivity</h3>
-      <ul style="margin: 1rem 0; padding-left: 2rem;">
-        <li><a href="/therapist-notion-workspace.html">How to Build a Therapist Notion Workspace That Saves Hours</a> — detailed walkthrough of setting up documentation systems</li>
-        <li><a href="/adhd-productivity-guide.html">ADHD-Friendly Productivity: How to Actually Use Notion Without Overwhelm</a> — strategies for neurodivergent professionals</li>
-        <li><a href="/tools-recommendations.html">Therapist Tools Stack 2026: Notion + 3 Complementary Apps</a> — ecosystem recommendations with affiliate links</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Ready to Get Started?</h2>
-      <p>Browse our complete collection of Notion templates designed for your profession. Each template comes with setup instructions, video walkthrough, and email support.</p>
-      <a href="/therapist-notion-workspace.html" class="btn">Browse All Templates →</a>
-    </section>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2026 Eli Chen Studio. All rights reserved.</p>
-    <p style="font-size: 0.9rem; margin-top: 1rem;">This site contains affiliate links. We may earn a commission if you purchase through recommended tools.</p>
   </footer>
 </body>
 </html>
