@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion for E-commerce Store Owners: Complete Business Operations Dashboard</title>
+    <meta name="description" content="Master Shopify, WooCommerce, or Etsy operations with Notion. Inventory tracking, order management, customer data, and supplier coordination in one system.">
+    <meta name="keywords" content="notion for ecommerce, shopify management, inventory tracking, order management, ecommerce template">
+    <meta name="author" content="Eli Chen Studio">
+    <meta property="og:title" content="Notion for E-commerce Store Owners">
+    <meta property="og:description" content="Central command center for managing inventory, orders, customers, and suppliers across all sales channels">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 3px solid #f59e0b;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #d97706;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #d97706;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #d97706;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 20px;
+            border-left: 4px solid #f59e0b;
+            margin: 20px 0;
+        }
+        .cta {
+            background: #fcd34d;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .cta a {
+            background: #f59e0b;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background: #d97706;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-q {
+            font-weight: bold;
+            color: #d97706;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+        strong {
+            color: #d97706;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="meta">Posted on March 14, 2026 | 11 min read</p>
+            <h1>Notion for E-commerce Store Owners: Complete Business Operations Dashboard</h1>
+            <p class="meta">Manage inventory, orders, customers, and suppliers from a single unified workspace</p>
+        </header>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> E-commerce store owners juggle multiple platforms (Shopify, WooCommerce, Etsy, Amazon), fragmented inventory data, supplier relationships, customer support, and business metrics scattered across different dashboards. This guide shows you how to build a Notion workspace that centralizes operations, automates order tracking, manages inventory across channels, and gives you real-time business intelligence—so you can focus on growing revenue instead of fighting tool sprawl.
+        </div>
+
+        <h2>The E-commerce Owner's Challenge</h2>
+        <p>Running an online store means:</p>
+        <ul>
+            <li><strong>Multi-channel chaos:</strong> Inventory on Shopify doesn't sync with Etsy or Amazon; you oversell constantly</li>
+            <li><strong>Order blindness:</strong> Orders scattered across Shopify admin, email notifications, and manual spreadsheets</li>
+            <li><strong>Supplier fragmentation:</strong> Lead times, MOQs, pricing for 5-20 suppliers tracked in separate emails and notes</li>
+            <li><strong>Customer data waste:</strong> Repeat customer info forgotten; no historical context on their purchases or issues</li>
+            <li><strong>Metrics scattered:</strong> Revenue in Stripe, inventory in Google Sheets, customer emails in Mailchimp, analytics in Shopify admin</li>
+            <li><strong>Returns & refunds confusion:</strong> No systematic tracking of why products are returned or refund status</li>
+            <li><strong>Team coordination gaps:</strong> If you have fulfillment help or customer service staff, they lack visibility into order status and inventory</li>
+        </ul>
+
+        <h2>Why Notion Solves This for E-commerce</h2>
+        <p>Notion becomes your central business dashboard because it:</p>
+        <ul>
+            <li><strong>Syncs inventory across channels:</strong> Central inventory database feeds into all platforms; prevents overselling</li>
+            <li><strong>Unifies orders:</strong> Auto-import from Shopify, Etsy, Amazon via Zapier; all orders in one place</li>
+            <li><strong>Manages suppliers:</strong> Track pricing, lead times, MOQs, and reorder schedules in one database</li>
+            <li><strong>Preserves customer data:</strong> Every customer's lifetime value, purchase history, and preferences recorded</li>
+            <li><strong>Provides real-time metrics:</strong> Revenue, profit margin, inventory turnover, and customer acquisition cost in one dashboard</li>
+            <li><strong>Tracks returns systematically:</strong> Reason for return, refund status, and trend analysis</li>
+            <li><strong>Enables team collaboration:</strong> Shared views for fulfillment team, customer service, and management</li>
+        </ul>
+
+        <h2>The Notion System: Core Architecture for E-commerce</h2>
+
+        <h3>1. Product Inventory Database</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Product Name:</strong> Text</li>
+            <li><strong>SKU:</strong> Text (unique identifier)</li>
+            <li><strong>Description:</strong> Rich text</li>
+            <li><strong>Category:</strong> Select (electronics, apparel, home, etc.)</li>
+            <li><strong>Unit Cost:</strong> Currency</li>
+            <li><strong>Selling Price:</strong> Currency</li>
+            <li><strong>Margin %:</strong> Formula ((Selling Price - Unit Cost) / Selling Price)</li>
+            <li><strong>Quantity on Hand:</strong> Number (synced from Shopify/WooCommerce)</li>
+            <li><strong>Reorder Point:</strong> Number (when to reorder)</li>
+            <li><strong>Lead Time (days):</strong> Number</li>
+            <li><strong>Supplier:</strong> Relation to Supplier database</li>
+            <li><strong>Sales This Month:</strong> Rollup count</li>
+            <li><strong>Revenue This Month:</strong> Rollup sum</li>
+            <li><strong>Status:</strong> Select (In Stock, Low Stock, Out of Stock, Discontinued)</li>
+        </ul>
+
+        <h3>2. Orders Database</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Order ID:</strong> Text (auto-import from Shopify/Amazon/Etsy)</li>
+            <li><strong>Order Date:</strong> Calendar</li>
+            <li><strong>Customer:</strong> Relation to Customer database</li>
+            <li><strong>Products Ordered:</strong> Relation to Inventory database</li>
+            <li><strong>Quantity:</strong> Number</li>
+            <li><strong>Order Total:</strong> Currency</li>
+            <li><strong>Status:</strong> Status field (Pending, Shipped, Delivered, Cancelled)</li>
+            <li><strong>Platform:</strong> Select (Shopify, Etsy, Amazon, WooCommerce, Direct)</li>
+            <li><strong>Tracking Number:</strong> Text</li>
+            <li><strong>Customer Email:</strong> Email (quick reply reference)</li>
+            <li><strong>Fulfillment Date:</strong> Date field</li>
+            <li><strong>Notes:</strong> Rich text (gift message, special instructions)</li>
+        </ul>
+
+        <h3>3. Customer Database</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Customer Name:</strong> Text</li>
+            <li><strong>Email:</strong> Email</li>
+            <li><strong>Phone:</strong> Phone number</li>
+            <li><strong>Location:</strong> Text (city, state)</li>
+            <li><strong>Total Lifetime Value:</strong> Currency (rollup of all orders)</li>
+            <li><strong>Total Orders:</strong> Rollup count</li>
+            <li><strong>Last Order Date:</strong> Rollup of most recent order</li>
+            <li><strong>Average Order Value:</strong> Formula (total value / number of orders)</li>
+            <li><strong>Customer Segment:</strong> Select (New, Regular, VIP, At-Risk)</li>
+            <li><strong>Preferred Products:</strong> Relation to products they've bought</li>
+            <li><strong>Order History:</strong> Relation to Orders database</li>
+            <li><strong>Notes:</strong> Rich text (preferences, communication style)</li>
+        </ul>
+
+        <h3>4. Supplier & Inventory Management</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Supplier Name:</strong> Text</li>
+            <li><strong>Contact Email:</strong> Email</li>
+            <li><strong>Phone:</strong> Phone</li>
+            <li><strong>Products Supplied:</strong> Relation to Inventory</li>
+            <li><strong>Unit Cost Per Item:</strong> Currency</li>
+            <li><strong>MOQ (Minimum Order Quantity):</strong> Number</li>
+            <li><strong>Lead Time (days):</strong> Number</li>
+            <li><strong>Payment Terms:</strong> Text (Net 30, upfront, etc.)</li>
+            <li><strong>Last Order Date:</strong> Date</li>
+            <li><strong>Reliability Score:</strong> Text (on-time delivery %)</li>
+        </ul>
+
+        <h3>5. Returns & Refunds Tracker</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Return ID:</strong> Text</li>
+            <li><strong>Original Order:</strong> Relation to Orders</li>
+            <li><strong>Product Returned:</strong> Relation to Inventory</li>
+            <li><strong>Return Reason:</strong> Select (Defective, Wrong Size, Wrong Item, Changed Mind, Damaged)</li>
+            <li><strong>Refund Amount:</strong> Currency</li>
+            <li><strong>Status:</strong> Status field (Return Received, Inspected, Refunded, Restocked)</li>
+            <li><strong>Return Date:</strong> Date</li>
+            <li><strong>Refund Issued Date:</strong> Date</li>
+        </ul>
+
+        <h3>6. Business Metrics Dashboard</h3>
+        <p><strong>Aggregated views showing:</strong></p>
+        <ul>
+            <li>Total revenue this month</li>
+            <li>Total expenses (COGS)</li>
+            <li>Gross profit margin</li>
+            <li>Average order value</li>
+            <li>Customer acquisition cost</li>
+            <li>Top 10 products by revenue</li>
+            <li>Return rate (returns / orders)</li>
+            <li>Inventory turnover by product</li>
+        </ul>
+
+        <h2>Pro Workflows</h2>
+
+        <h3>Automatic Inventory Alerts</h3>
+        <p>Use Zapier to check Inventory database daily:</p>
+        <ul>
+            <li>Products hitting reorder point auto-send email to supplier with suggested order</li>
+            <li>Out of stock items auto-pause on Shopify/Etsy</li>
+        </ul>
+
+        <h3>Multi-Channel Order Sync</h3>
+        <p>Zapier pulls orders from Shopify, Etsy, Amazon into single Orders database:</p>
+        <ul>
+            <li>All orders visible in one chronological view</li>
+            <li>Filter by platform or date range</li>
+            <li>Status updates automatically when order ships</li>
+        </ul>
+
+        <h3>Customer Win-Back Campaign</h3>
+        <p>Filter for customers with zero orders in 90+ days:</p>
+        <ul>
+            <li>Auto-generate email: "We miss you! Here's 15% off your next order"</li>
+            <li>Track who returns</li>
+        </ul>
+
+        <h2>Implementation: Month 1</h2>
+
+        <h3>Week 1: Foundation</h3>
+        <ul>
+            <li>Create Inventory database with all current products</li>
+            <li>Add Unit Cost and Selling Price</li>
+            <li>Create Supplier database with all suppliers</li>
+        </ul>
+
+        <h3>Week 2: Orders & Customers</h3>
+        <ul>
+            <li>Create Customer database</li>
+            <li>Create Orders database</li>
+            <li>Link Orders to Customers and Products</li>
+        </ul>
+
+        <h3>Week 3: Integration</h3>
+        <ul>
+            <li>Set up Zapier to auto-import orders from Shopify/Etsy/Amazon</li>
+            <li>Configure inventory sync (manual or automated)</li>
+        </ul>
+
+        <h3>Week 4: Intelligence</h3>
+        <ul>
+            <li>Build metrics dashboard</li>
+            <li>Create Returns tracker</li>
+            <li>Set up reorder alerts</li>
+        </ul>
+
+        <h2>Common Questions</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <p class="faq-q">Q: Can Notion sync with Shopify automatically?</p>
+                <p>A: Yes via Zapier. Orders auto-import from Shopify to Notion daily. Cost: $15-30/month for Zapier.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: How do I update inventory when I sell products?</p>
+                <p>A: Use Zapier to auto-decrement inventory when an order is placed. Or manually update inventory in Notion (2 minutes/day).</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: Can I export data for accounting/taxes?</p>
+                <p>A: Yes. Use Notion exports (CSV) or integrations like Zapier to send data to accounting software (QuickBooks, FreshBooks).</p>
+            </div>
+        </div>
+
+        <h2>Why This Works</h2>
+        <p>E-commerce scaling succeeds when:</p>
+        <ul>
+            <li>Inventory is accurate across all channels</li>
+            <li>No order falls through cracks</li>
+            <li>You understand your customer lifetime value</li>
+            <li>Supplier relationships are optimized</li>
+            <li>Profitability is measured per product</li>
+        </ul>
+
+        <div class="cta">
+            <p><strong>Ready to centralize your e-commerce operations?</strong></p>
+            <p>Get our pre-built E-commerce Operations Dashboard with inventory management, multi-channel order tracking, customer database, and supplier coordination.</p>
+            <a href="https://etsy.com/shop/EliChenStudio?search_query=ecommerce" target="_blank">Get the Template on Etsy</a>
+        </div>
+
+        <footer>
+            <p><strong>Eli Chen Studio</strong> creates production-ready Notion templates for entrepreneurs. This guide is part of our mission to help e-commerce owners scale without tool chaos.</p>
+        </footer>
+    </div>
+</body>
+</html>
