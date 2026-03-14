@@ -3,166 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eli Chen Studio - Blog</title>
+    <title>Eli Chen Studio - Notion Templates & Blog</title>
+    <meta name="description" content="Professional Notion templates and guides for small business owners, entrepreneurs, and creative professionals.">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; margin: 40px; background: #f5f5f5; }
-        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; }
-        h1 { color: #1e40af; border-bottom: 3px solid #2563eb; padding-bottom: 10px; }
-        .blog-list { list-style: none; margin: 20px 0; }
-        .blog-item { margin: 15px 0; padding: 15px; background: #f0f4f8; border-radius: 6px; }
-        .blog-item a { color: #1e40af; text-decoration: none; font-weight: bold; font-size: 1.1em; }
-        .blog-item a:hover { text-decoration: underline; }
-        .blog-item .category { color: #666; font-size: 0.9em; margin-top: 5px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header { background: white; padding: 40px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #1e40af; font-size: 2.5em; margin-bottom: 10px; }
+        .tagline { color: #666; font-size: 1.1em; margin-bottom: 20px; }
+        .badge { display: inline-block; background: #2563eb; color: white; padding: 8px 16px; border-radius: 4px; font-size: 0.9em; margin-right: 10px; }
+        .section { margin-bottom: 40px; }
+        .section h2 { color: #1e40af; font-size: 1.8em; margin-bottom: 20px; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .blog-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; }
+        .blog-card:hover { transform: translateY(-4px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+        .blog-card a { color: #1e40af; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        .blog-card a:hover { text-decoration: underline; }
+        .blog-card p { color: #555; margin-top: 10px; font-size: 0.95em; line-height: 1.5; }
+        .category { color: #888; font-size: 0.85em; margin-top: 10px; display: inline-block; padding: 4px 8px; background: #f0f0f0; border-radius: 4px; }
+        .new-badge { background: #ef4444; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.75em; font-weight: bold; margin-left: 8px; }
+        footer { background: white; padding: 30px; border-radius: 8px; margin-top: 40px; text-align: center; color: #666; }
+        a { color: #1e40af; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Eli Chen Studio - Blog & Resources</h1>
-        <p>Professional Notion templates and guides for small business owners, coaches, therapists, and creative professionals.</p>
-        
-        <h2>Newest Guides (2026)</h2>
-        <ul class="blog-list">
-            <li class="blog-item">
-                <a href="035-notion-for-social-media-managers.html">Notion for Social Media Managers</a>
-                <p>Master content calendars, campaign tracking, multi-client management, and performance analytics.</p>
-                <div class="category">📱 Marketing & Content</div>
-            </li>
-            <li class="blog-item">
-                <a href="036-notion-for-grant-writers.html">Notion for Grant Writers & Nonprofits</a>
-                <p>Centralize grant tracking, fundraising pipelines, donor management, and compliance reporting.</p>
-                <div class="category">🤝 Nonprofit & Fundraising</div>
-            </li>
-            <li class="blog-item">
-                <a href="037-notion-for-virtual-assistants.html">Notion for Virtual Assistants</a>
-                <p>Multi-client management, task prioritization, time tracking, and automated billing.</p>
-                <div class="category">👩‍💼 Administrative</div>
-            </li>
-            <li class="blog-item">
-                <a href="038-notion-for-yoga-instructors.html">Notion for Yoga Instructors & Wellness</a>
-                <p>Class management, student tracking, payment automation, and progress monitoring.</p>
-                <div class="category">🧘 Wellness & Health</div>
-            </li>
-        </ul>
+        <header>
+            <h1>🎯 Eli Chen Studio</h1>
+            <p class="tagline">Production-ready Notion templates for entrepreneurs, professionals, and creative businesses</p>
+            <span class="badge">42+ Professional Niches</span>
+            <span class="badge">40+ Blog Guides</span>
+            <span class="badge">100% Customizable</span>
+        </header>
 
-        <h2>Previous Guides</h2>
-        <ul class="blog-list">
-            <li class="blog-item">
-                <a href="001-notion-for-lawyers.html">Notion for Lawyers</a>
-                <div class="category">⚖️ Legal & Compliance</div>
-            </li>
-            <li class="blog-item">
-                <a href="002-notion-for-small-business.html">Notion for Small Business</a>
-                <div class="category">🏪 Business Management</div>
-            </li>
-            <li class="blog-item">
-                <a href="003-notion-for-freelancers.html">Notion for Freelancers</a>
-                <div class="category">💼 Freelancing</div>
-            </li>
-            <li class="blog-item">
-                <a href="004-notion-for-students.html">Notion for Students</a>
-                <div class="category">🎓 Education</div>
-            </li>
-            <li class="blog-item">
-                <a href="005-notion-for-hr.html">Notion for HR Professionals</a>
-                <div class="category">👥 Human Resources</div>
-            </li>
-            <li class="blog-item">
-                <a href="006-notion-for-real-estate.html">Notion for Real Estate Agents</a>
-                <div class="category">🏠 Real Estate</div>
-            </li>
-            <li class="blog-item">
-                <a href="007-notion-for-nonprofits.html">Notion for Nonprofits</a>
-                <div class="category">🤝 Nonprofit</div>
-            </li>
-            <li class="blog-item">
-                <a href="008-notion-for-personal-finance.html">Notion for Personal Finance</a>
-                <div class="category">💰 Finance</div>
-            </li>
-            <li class="blog-item">
-                <a href="009-notion-for-fitness-coaches.html">Notion for Fitness Coaches</a>
-                <div class="category">🏋️ Wellness</div>
-            </li>
-            <li class="blog-item">
-                <a href="010-notion-for-therapists.html">Notion for Therapists</a>
-                <div class="category">🧠 Mental Health</div>
-            </li>
-            <li class="blog-item">
-                <a href="014-notion-for-occupational-therapists.html">Notion for Occupational Therapists</a>
-                <div class="category">🏥 Healthcare</div>
-            </li>
-            <li class="blog-item">
-                <a href="015-notion-for-event-planners.html">Notion for Event Planners</a>
-                <div class="category">🎉 Event Management</div>
-            </li>
-            <li class="blog-item">
-                <a href="016-notion-for-accountants.html">Notion for Accountants</a>
-                <div class="category">💼 Finance & Accounting</div>
-            </li>
-            <li class="blog-item">
-                <a href="017-notion-for-consultants.html">Notion for Consultants</a>
-                <div class="category">💡 Consulting</div>
-            </li>
-            <li class="blog-item">
-                <a href="018-notion-for-authors.html">Notion for Authors</a>
-                <div class="category">✍️ Creative</div>
-            </li>
-            <li class="blog-item">
-                <a href="019-notion-for-photographers.html">Notion for Photographers</a>
-                <div class="category">📷 Creative</div>
-            </li>
-            <li class="blog-item">
-                <a href="020-notion-for-dentists.html">Notion for Dentists</a>
-                <div class="category">🦷 Healthcare</div>
-            </li>
-            <li class="blog-item">
-                <a href="021-notion-for-content-creators.html">Notion for Content Creators</a>
-                <div class="category">📹 Content & Media</div>
-            </li>
-            <li class="blog-item">
-                <a href="023-notion-for-life-coaches.html">Notion for Life Coaches</a>
-                <div class="category">🎯 Coaching</div>
-            </li>
-            <li class="blog-item">
-                <a href="024-notion-for-dentists.html">Notion for Dental Practice Management</a>
-                <div class="category">🦷 Healthcare</div>
-            </li>
-            <li class="blog-item">
-                <a href="025-notion-for-hair-salon-owners.html">Notion for Hair Salon Owners</a>
-                <div class="category">💇 Beauty & Personal Care</div>
-            </li>
-            <li class="blog-item">
-                <a href="026-notion-for-real-estate-brokers.html">Notion for Real Estate Brokers & Teams</a>
-                <div class="category">🏠 Real Estate</div>
-            </li>
-            <li class="blog-item">
-                <a href="027-notion-for-tax-professionals.html">Notion for Tax Professionals</a>
-                <div class="category">💼 Finance & Accounting</div>
-            </li>
-            <li class="blog-item">
-                <a href="028-notion-for-construction-contractors.html">Notion for Construction Contractors</a>
-                <div class="category">🏗️ Construction</div>
-            </li>
-            <li class="blog-item">
-                <a href="029-notion-for-graphic-designers.html">Notion for Graphic Designers</a>
-                <div class="category">🎨 Creative</div>
-            </li>
-            <li class="blog-item">
-                <a href="032-notion-for-veterinarians.html">Notion for Veterinarians</a>
-                <div class="category">🐾 Healthcare & Pets</div>
-            </li>
-            <li class="blog-item">
-                <a href="033-notion-for-insurance-agents.html">Notion for Insurance Agents</a>
-                <div class="category">🛡️ Finance & Insurance</div>
-            </li>
-            <li class="blog-item">
-                <a href="034-notion-for-construction.html">Notion for Construction Project Managers</a>
-                <div class="category">🏗️ Construction</div>
-            </li>
-        </ul>
+        <div class="section">
+            <h2>✨ New in March 2026 (6 Latest Guides)</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <a href="035-notion-for-social-media-managers.html">Notion for Social Media Managers <span class="new-badge">NEW</span></a>
+                    <p>Master content calendars, multi-platform campaigns, client management, and performance analytics for SMMs and agencies.</p>
+                    <div class="category">📱 Marketing & Social Media</div>
+                </div>
+                <div class="blog-card">
+                    <a href="036-notion-for-grant-writers.html">Notion for Grant Writers & Nonprofits <span class="new-badge">NEW</span></a>
+                    <p>Centralize grant tracking, fundraising pipelines, donor management, and compliance reporting for nonprofits.</p>
+                    <div class="category">🤝 Nonprofit & Fundraising</div>
+                </div>
+                <div class="blog-card">
+                    <a href="037-notion-for-virtual-assistants.html">Notion for Virtual Assistants <span class="new-badge">NEW</span></a>
+                    <p>Multi-client management, task prioritization, time tracking, and automated billing for VAs and admins.</p>
+                    <div class="category">👩‍💼 Administrative</div>
+                </div>
+                <div class="blog-card">
+                    <a href="038-notion-for-yoga-instructors.html">Notion for Yoga Instructors & Wellness <span class="new-badge">NEW</span></a>
+                    <p>Class management, student tracking, payment automation, and progress monitoring for wellness professionals.</p>
+                    <div class="category">🧘 Wellness & Health</div>
+                </div>
+                <div class="blog-card">
+                    <a href="039-notion-for-ecommerce-owners.html">Notion for E-commerce Store Owners <span class="new-badge">NEW</span></a>
+                    <p>Multi-channel inventory management, order tracking, customer databases, and supplier coordination for e-commerce.</p>
+                    <div class="category">🛍️ E-commerce & Business</div>
+                </div>
+                <div class="blog-card">
+                    <a href="040-notion-for-course-creators.html">Notion for Course Creators <span class="new-badge">NEW</span></a>
+                    <p>Course content management, student progress tracking, support tickets, and automated follow-ups for educators.</p>
+                    <div class="category">🎓 Education & Courses</div>
+                </div>
+            </div>
+        </div>
 
-        <h2>About</h2>
-        <p>These guides accompany our Notion template marketplace. Each template is production-ready, fully customizable, and designed for specific professional workflows.</p>
-        <p><strong>Looking for a template?</strong> Visit our <a href="https://etsy.com/shop/EliChenStudio" target="_blank">Etsy shop</a>.</p>
+        <div class="section">
+            <h2>📚 Complete Blog Library (35+ Guides)</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <a href="001-notion-for-lawyers.html">Notion for Lawyers & Legal Professionals</a>
+                    <p>Case management, document tracking, client billing, and deadline management.</p>
+                    <div class="category">⚖️ Legal & Compliance</div>
+                </div>
+                <div class="blog-card">
+                    <a href="002-notion-for-small-business.html">Notion for Small Business Owners</a>
+                    <p>Complete operations dashboard: finances, inventory, projects, and team management.</p>
+                    <div class="category">🏪 Business Management</div>
+                </div>
+                <div class="blog-card">
+                    <a href="003-notion-for-freelancers.html">Notion for Freelancers</a>
+                    <p>Project tracking, client management, invoicing, and time tracking for freelancers.</p>
+                    <div class="category">💼 Freelancing</div>
+                </div>
+                <div class="blog-card">
+                    <a href="004-notion-for-students.html">Notion for Students</a>
+                    <p>Study organization, project tracking, grade management, and research database.</p>
+                    <div class="category">🎓 Education</div>
+                </div>
+                <div class="blog-card">
+                    <a href="005-notion-for-hr.html">Notion for HR Professionals</a>
+                    <p>Employee management, recruitment tracking, onboarding, and performance reviews.</p>
+                    <div class="category">👥 Human Resources</div>
+                </div>
+                <div class="blog-card">
+                    <a href="006-notion-for-real-estate.html">Notion for Real Estate Agents</a>
+                    <p>Listing management, client CRM, transactions pipeline, and commission tracking.</p>
+                    <div class="category">🏠 Real Estate</div>
+                </div>
+                <div class="blog-card">
+                    <a href="007-notion-for-nonprofits.html">Notion for Nonprofits</a>
+                    <p>Volunteer management, event planning, fundraising, and impact tracking.</p>
+                    <div class="category">🤝 Nonprofit</div>
+                </div>
+                <div class="blog-card">
+                    <a href="008-notion-for-personal-finance.html">Notion for Personal Finance & Budgeting</a>
+                    <p>Budget tracking, investment portfolio, debt management, and financial goals.</p>
+                    <div class="category">💰 Finance</div>
+                </div>
+                <div class="blog-card">
+                    <a href="009-notion-for-fitness-coaches.html">Notion for Fitness Coaches</a>
+                    <p>Client tracking, workout plans, progress monitoring, and billing management.</p>
+                    <div class="category">🏋️ Wellness & Fitness</div>
+                </div>
+                <div class="blog-card">
+                    <a href="010-notion-for-therapists.html">Notion for Therapists & Counselors</a>
+                    <p>Client management, session notes, treatment plans, and progress tracking.</p>
+                    <div class="category">🧠 Mental Health</div>
+                </div>
+                <div class="blog-card">
+                    <a href="014-notion-for-occupational-therapists.html">Notion for Occupational Therapists</a>
+                    <p>Patient assessment, treatment planning, progress documentation, and therapy tracking.</p>
+                    <div class="category">🏥 Healthcare</div>
+                </div>
+                <div class="blog-card">
+                    <a href="015-notion-for-event-planners.html">Notion for Event Planners</a>
+                    <p>Event management, vendor tracking, guest lists, and timeline organization.</p>
+                    <div class="category">🎉 Event Management</div>
+                </div>
+                <div class="blog-card">
+                    <a href="016-notion-for-accountants.html">Notion for Accountants</a>
+                    <p>Client management, tax tracking, documentation, and financial reporting.</p>
+                    <div class="category">💼 Finance & Accounting</div>
+                </div>
+                <div class="blog-card">
+                    <a href="017-notion-for-consultants.html">Notion for Consultants & Advisors</a>
+                    <p>Project management, client proposals, deliverables tracking, and billing.</p>
+                    <div class="category">💡 Consulting</div>
+                </div>
+                <div class="blog-card">
+                    <a href="018-notion-for-authors.html">Notion for Authors & Writers</a>
+                    <p>Writing project management, publishing pipeline, manuscript tracking, and marketing.</p>
+                    <div class="category">✍️ Creative & Writing</div>
+                </div>
+                <div class="blog-card">
+                    <a href="019-notion-for-photographers.html">Notion for Photographers</a>
+                    <p>Client booking, portfolio management, shoot planning, and post-production tracking.</p>
+                    <div class="category">📷 Creative & Photography</div>
+                </div>
+                <div class="blog-card">
+                    <a href="020-notion-for-dentists.html">Notion for Dentists & Dental Practices</a>
+                    <p>Patient management, appointment scheduling, treatment planning, and billing.</p>
+                    <div class="category">🦷 Healthcare</div>
+                </div>
+                <div class="blog-card">
+                    <a href="021-notion-for-content-creators.html">Notion for Content Creators</a>
+                    <p>Content calendar, platform management, audience analytics, and monetization tracking.</p>
+                    <div class="category">📹 Content & Media</div>
+                </div>
+                <div class="blog-card">
+                    <a href="023-notion-for-life-coaches.html">Notion for Life Coaches & Mentors</a>
+                    <p>Client onboarding, coaching sessions, goal tracking, and progress accountability.</p>
+                    <div class="category">🎯 Coaching & Development</div>
+                </div>
+                <div class="blog-card">
+                    <a href="024-notion-for-dentists.html">Notion for Dental Practice Management</a>
+                    <p>Advanced practice operations, team coordination, and clinical documentation.</p>
+                    <div class="category">🦷 Healthcare</div>
+                </div>
+                <div class="blog-card">
+                    <a href="025-notion-for-hair-salon-owners.html">Notion for Hair Salon & Beauty Owners</a>
+                    <p>Client management, stylist scheduling, inventory tracking, and commission management.</p>
+                    <div class="category">💇 Beauty & Personal Care</div>
+                </div>
+                <div class="blog-card">
+                    <a href="026-notion-for-real-estate-brokers.html">Notion for Real Estate Brokers & Teams</a>
+                    <p>Multi-agent management, transaction tracking, commission splits, and team operations.</p>
+                    <div class="category">🏠 Real Estate</div>
+                </div>
+                <div class="blog-card">
+                    <a href="027-notion-for-tax-professionals.html">Notion for Tax Professionals</a>
+                    <p>Client tax management, deadline tracking, documentation, and return organization.</p>
+                    <div class="category">💼 Finance & Tax</div>
+                </div>
+                <div class="blog-card">
+                    <a href="028-notion-for-construction-contractors.html">Notion for Construction Contractors</a>
+                    <p>Project management, subcontractor coordination, budget tracking, and schedule management.</p>
+                    <div class="category">🏗️ Construction</div>
+                </div>
+                <div class="blog-card">
+                    <a href="029-notion-for-graphic-designers.html">Notion for Graphic Designers</a>
+                    <p>Project management, client tracking, design library, and revision history.</p>
+                    <div class="category">🎨 Creative & Design</div>
+                </div>
+                <div class="blog-card">
+                    <a href="032-notion-for-veterinarians.html">Notion for Veterinarians & Pet Care</a>
+                    <p>Patient/pet management, medical records, appointment scheduling, and billing.</p>
+                    <div class="category">🐾 Healthcare & Pets</div>
+                </div>
+                <div class="blog-card">
+                    <a href="033-notion-for-insurance-agents.html">Notion for Insurance Agents & Brokers</a>
+                    <p>Client management, policy tracking, renewal dates, and commission tracking.</p>
+                    <div class="category">🛡️ Finance & Insurance</div>
+                </div>
+                <div class="blog-card">
+                    <a href="034-notion-for-construction.html">Notion for Construction Project Managers</a>
+                    <p>Advanced project operations, team coordination, timeline management, and compliance.</p>
+                    <div class="category">🏗️ Construction & Project Management</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3>Ready to Get Started?</h3>
+            <p>Visit our <a href="https://etsy.com/shop/EliChenStudio" target="_blank">Etsy Shop</a> to browse and purchase production-ready Notion templates.</p>
+            <p>All templates are fully customizable, come with setup documentation, and are designed for immediate use.</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">© 2026 Eli Chen Studio | <a href="https://github.com/Wasuma/eli-chen-studio">GitHub</a></p>
+        </footer>
     </div>
 </body>
 </html>
