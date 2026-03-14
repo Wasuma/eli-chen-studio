@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion for Course Creators: Complete Online Course & Student Management System</title>
+    <meta name="description" content="Master online course creation, student progress tracking, content management, and marketing with Notion. Complete system for course creators and online educators.">
+    <meta name="keywords" content="notion for course creators, online course management, student tracking, course template, online education">
+    <meta name="author" content="Eli Chen Studio">
+    <meta property="og:title" content="Notion for Course Creators">
+    <meta property="og:description" content="Central hub for managing course content, student progress, sales, and customer support for online educators">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 3px solid #8b5cf6;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #7c3aed;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #7c3aed;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #7c3aed;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background: #ede9fe;
+            padding: 20px;
+            border-left: 4px solid #8b5cf6;
+            margin: 20px 0;
+        }
+        .cta {
+            background: #ddd6fe;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .cta a {
+            background: #8b5cf6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background: #7c3aed;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-q {
+            font-weight: bold;
+            color: #7c3aed;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+        strong {
+            color: #7c3aed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="meta">Posted on March 14, 2026 | 12 min read</p>
+            <h1>Notion for Course Creators: Complete Online Course & Student Management System</h1>
+            <p class="meta">Manage course content, student progress, sales, and support from a unified workspace</p>
+        </header>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> Online course creators juggle course content across modules and lessons, student progress tracking, email marketing, payment processing, and support tickets scattered across Kajabi, Teachable, Mailchimp, Stripe, and spreadsheets. This guide shows you how to build a Notion system that centralizes course management, tracks student progress, automates follow-ups, and provides business intelligence—so you can focus on creating great content and serving students instead of managing tools.
+        </div>
+
+        <h2>The Course Creator's Challenge</h2>
+        <p>If you're selling digital courses, you know the struggle:</p>
+        <ul>
+            <li><strong>Fragmented content:</strong> Course materials in Google Drive, Dropbox, or Teachable; hard to organize and update</li>
+            <li><strong>Student progress blindness:</strong> No clear view of who's active, who's stuck, who needs a nudge</li>
+            <li><strong>Completion tracking chaos:</strong> No systematic way to track which modules students completed, where they're dropping off</li>
+            <li><strong>Email management overload:</strong> Using MailChimp for sequences, but not connected to student progress data</li>
+            <li><strong>Revenue visibility:</strong> Sales in Stripe, but no clear picture of customer lifetime value or cohort performance</li>
+            <li><strong>Support scattered:</strong> Support tickets via email, Slack, or helpdesk; no context on which course they're in or their progress</li>
+            <li><strong>Scaling friction:</strong> Adding new courses means new setup work in Teachable/Kajabi/Thinkific</li>
+        </ul>
+
+        <h2>Why Notion Solves This for Course Creators</h2>
+        <p>Notion becomes your course operations hub because it:</p>
+        <ul>
+            <li><strong>Centralizes all content:</strong> Modules, lessons, resources, and assets in one organized database</li>
+            <li><strong>Tracks student progress:</strong> Real-time visibility into who's on module 3, who's stuck, who needs help</li>
+            <li><strong>Automates follow-ups:</strong> Zapier sends congratulations emails when students hit milestones, personalized based on progress</li>
+            <li><strong>Manages sales funnel:</strong> Prospect → Student → Customer → Alumni, all in one place</li>
+            <li><strong>Provides business intelligence:</strong> Cohort completion rates, time to completion, revenue per student</li>
+            <li><strong>Enables support coordination:</strong> Support tickets linked to student progress and course details</li>
+            <li><strong>Scales easily:</strong> Add new courses without changing your core system</li>
+        </ul>
+
+        <h2>The Notion System: Core Architecture for Course Creators</h2>
+
+        <h3>1. Course Master Database</h3>
+        <p>All courses and their metadata.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Course Name:</strong> Text</li>
+            <li><strong>Course URL/Slug:</strong> Text</li>
+            <li><strong>Description:</strong> Rich text</li>
+            <li><strong>Launch Date:</strong> Date field</li>
+            <li><strong>Price:</strong> Currency</li>
+            <li><strong>Status:</strong> Select (In Development, Live, Archived)</li>
+            <li><strong>Number of Modules:</strong> Number</li>
+            <li><strong>Estimated Time to Complete (hours):</strong> Number</li>
+            <li><strong>Modules:</strong> Relation to Modules database</li>
+            <li><strong>Enrolled Students:</strong> Relation to Students database</li>
+            <li><strong>Total Enrolled:</strong> Rollup count</li>
+            <li><strong>Total Revenue:</strong> Rollup sum (from payments)</li>
+            <li><strong>Average Completion Rate:</strong> Rollup average of completion %</li>
+            <li><strong>Platform Hosted On:</strong> Select (Teachable, Kajabi, Thinkific, Podia, Custom)</li>
+        </ul>
+
+        <h3>2. Modules & Lessons Database</h3>
+        <p>Course content structure and organization.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Module Name:</strong> Text</li>
+            <li><strong>Course:</strong> Relation to Courses database</li>
+            <li><strong>Module Number:</strong> Number (1, 2, 3, etc.)</li>
+            <li><strong>Lessons:</strong> Relation to Lessons database</li>
+            <li><strong>Total Lessons:</strong> Rollup count</li>
+            <li><strong>Module Description:</strong> Rich text</li>
+            <li><strong>Learning Objectives:</strong> Rich text (bullet list of what students learn)</li>
+            <li><strong>Status:</strong> Select (Outline, Drafting, Recorded, Edited, Live)</li>
+            <li><strong>Estimated Duration (minutes):</strong> Number</li>
+            <li><strong>Resources/Downloads:</strong> File field</li>
+        </ul>
+
+        <h3>3. Lessons Database</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Lesson Title:</strong> Text</li>
+            <li><strong>Module:</strong> Relation to Modules</li>
+            <li><strong>Lesson Number:</strong> Number (within module)</li>
+            <li><strong>Video URL:</strong> URL field (YouTube, Vimeo, etc.)</li>
+            <li><strong>Duration (minutes):</strong> Number</li>
+            <li><strong>Transcript:</strong> Rich text or file</li>
+            <li><strong>Supplemental Resources:</strong> File or URL fields</li>
+            <li><strong>Homework/Assignment:</strong> Rich text (what students should do)</li>
+            <li><strong>Status:</strong> Status field (Outline, Scripted, Recorded, Edited, Live)</li>
+        </ul>
+
+        <h3>4. Students / Enrollees Database</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Student Name:</strong> Text</li>
+            <li><strong>Email:</strong> Email</li>
+            <li><strong>Enrolled Courses:</strong> Relation to Courses database</li>
+            <li><strong>Enrollment Date:</strong> Date</li>
+            <li><strong>Course Progress:</strong> Relation to Student Progress database</li>
+            <li><strong>Total Courses Purchased:</strong> Number (rollup)</li>
+            <li><strong>Lifetime Customer Value:</strong> Currency (rollup of all course purchases)</li>
+            <li><strong>Last Active Date:</strong> Date (last time they accessed course content)</li>
+            <li><strong>Support Tickets:</strong> Relation to Support Tickets database</li>
+            <li><strong>Status:</strong> Select (Active, Completed, Inactive, Churn Risk)</li>
+        </ul>
+
+        <h3>5. Student Progress Tracker</h3>
+        <p>Real-time tracking of each student's journey through each course.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Student:</strong> Relation to Students</li>
+            <li><strong>Course:</strong> Relation to Courses</li>
+            <li><strong>Current Module:</strong> Select or Number</li>
+            <li><strong>Current Lesson:</strong> Select or Number</li>
+            <li><strong>Lessons Completed:</strong> Relation to Lessons (checkboxes for each lesson)</li>
+            <li><strong>Modules Completed:</strong> Number</li>
+            <li><strong>Overall Progress %:</strong> Formula (completed lessons / total lessons × 100)</li>
+            <li><strong>Time Spent (hours):</strong> Number (manual entry or auto-tracked if using Teachable API)</li>
+            <li><strong>Completion Status:</strong> Status field (In Progress, Completed, Stuck, On Break)</li>
+            <li><strong>Days Since Enrollment:</strong> Formula (TODAY() - enrollment date)</li>
+            <li><strong>Days Since Last Activity:</strong> Formula (TODAY() - last active date)</li>
+            <li><strong>Stuck Alert:</strong> Checkbox (if no activity for 30+ days)</li>
+        </ul>
+
+        <h3>6. Support Tickets Database</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Ticket ID:</strong> Auto-increment</li>
+            <li><strong>Student:</strong> Relation to Students</li>
+            <li><strong>Course:</strong> Relation to Courses</li>
+            <li><strong>Current Module (at time of issue):</strong> Text</li>
+            <li><strong>Question/Issue:</strong> Rich text</li>
+            <li><strong>Topic:</strong> Select (Technical Issue, Content Question, Homework Help, Billing, General)</li>
+            <li><strong>Status:</strong> Status field (Open, In Progress, Resolved, Closed)</li>
+            <li><strong>Priority:</strong> Select (Low, Medium, High)</li>
+            <li><strong>Date Submitted:</strong> Date</li>
+            <li><strong>Date Resolved:</strong> Date</li>
+            <li><strong>Response:</strong> Rich text (your answer/solution)</li>
+        </ul>
+
+        <h3>7. Payment & Sales Tracker</h3>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Student:</strong> Relation to Students</li>
+            <li><strong>Course Purchased:</strong> Relation to Courses</li>
+            <li><strong>Amount Paid:</strong> Currency</li>
+            <li><strong>Payment Date:</strong> Date</li>
+            <li><strong>Payment Method:</strong> Select (Credit Card, PayPal, Stripe, etc.)</li>
+            <li><strong>Refund Status:</strong> Select (Not Refunded, Refunded)</li>
+            <li><strong>Notes:</strong> Rich text (coupon used, payment plan, etc.)</li>
+        </ul>
+
+        <h2>Pro Workflows: Automations That Save 10+ Hours/Week</h2>
+
+        <h3>Stuck Student Alert & Follow-Up</h3>
+        <p>Zapier checks Student Progress daily for students with 30+ days of inactivity:</p>
+        <ul>
+            <li>Auto-email: "We notice you haven't been in the course lately. What can we help with?"</li>
+            <li>Flag in Notion for personal outreach</li>
+            <li>Track who returns</li>
+        </ul>
+
+        <h3>Module Completion Celebration</h3>
+        <p>When a student completes a module (update Progress database):</p>
+        <ul>
+            <li>Auto-email: "Congrats on completing Module 3! You're [X% through the course"</li>
+            <li>Personalized based on their progress</li>
+            <li>Optional: bonus resource for completing module on time</li>
+        </ul>
+
+        <h3>Cohort Analysis Report</h3>
+        <p>Weekly rollup views calculate:</p>
+        <ul>
+            <li>Average progress by enrollment cohort (all March students vs. April students)</li>
+            <li>Average time to completion</li>
+            <li>Common drop-off points (which module loses most students?)</li>
+            <li>Support ticket trends (which lessons get most questions?)</li>
+        </ul>
+
+        <h3>Upsell Automation</h3>
+        <p>When students complete a course:</p>
+        <ul>
+            <li>Update status to "Completed"</li>
+            <li>Auto-email with: "Great job! Ready for the next level? Check out our advanced course"</li>
+            <li>Track who purchases next course</li>
+        </ul>
+
+        <h2>Implementation: 4-Week Rollout</h2>
+
+        <h3>Week 1: Foundation (2-3 hours)</h3>
+        <ul>
+            <li>Create Courses database with all your live and upcoming courses</li>
+            <li>Create Modules database with all modules for each course</li>
+            <li>Create Lessons database with all lesson details</li>
+        </ul>
+
+        <h3>Week 2: Students (2-3 hours)</h3>
+        <ul>
+            <li>Create Students database</li>
+            <li>Create Student Progress database</li>
+            <li>Manually add current students and their progress (one-time data entry)</li>
+        </ul>
+
+        <h3>Week 3: Operations (2 hours)</h3>
+        <ul>
+            <li>Create Support Tickets database</li>
+            <li>Create Payments database</li>
+            <li>Test manual workflow for new student enrollment</li>
+        </ul>
+
+        <h3>Week 4: Automation (2 hours)</h3>
+        <ul>
+            <li>Set up Zapier to auto-add students when they purchase (Stripe → Notion)</li>
+            <li>Set up stuck student alerts (daily check for inactivity)</li>
+            <li>Create completion email sequences</li>
+        </ul>
+
+        <h2>Common Questions</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <p class="faq-q">Q: Can Notion track when students actually watch videos?</p>
+                <p>A: Not natively. If using Teachable/Kajabi, you can manually track completion or use Zapier webhooks to update Notion when a video is watched. Simpler: have students confirm they've watched by submitting a quick quiz or assignment.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: Can I share student progress views with my team?</p>
+                <p>A: Yes. Create read-only filtered views showing only specific students or modules. Share with support staff or co-teachers with appropriate permission levels.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: How do I handle group cohorts or scheduled courses?</p>
+                <p>A: Add a "Cohort" field to Students database. Create separate Student Progress views filtered by cohort. Track cohort-level metrics (average completion time, cohort size, cohort revenue).</p>
+            </div>
+        </div>
+
+        <h2>Why This System Works</h2>
+        <p>Online education succeeds when:</p>
+        <ul>
+            <li>Students are engaged and making progress</li>
+            <li>You know exactly where students are stuck and help proactively</li>
+            <li>Completions lead to upsells (more courses purchased)</li>
+            <li>Support is fast because context is available</li>
+            <li>You can measure course quality (completion rates, time to completion)</li>
+        </ul>
+
+        <div class="cta">
+            <p><strong>Ready to centralize your course operations?</strong></p>
+            <p>Get our pre-built Course Creator Command Center with course content management, student progress tracking, support tickets, and automated follow-ups.</p>
+            <a href="https://etsy.com/shop/EliChenStudio?search_query=course%20creator" target="_blank">Get the Template on Etsy</a>
+        </div>
+
+        <footer>
+            <p><strong>Eli Chen Studio</strong> creates production-ready Notion templates for educators and course creators. This guide is part of our mission to help you scale education without burning out.</p>
+        </footer>
+    </div>
+</body>
+</html>
