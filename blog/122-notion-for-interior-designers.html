@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion for Interior Designers: Project Management & Client Portal | Blog</title>
+  <meta name="description" content="Build a complete interior design project management system in Notion. Manage clients, design concepts, material selections, budgets, timelines, and installation—all with a professional client portal.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f9fafb;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    header .meta { font-size: 0.95rem; opacity: 0.9; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    article {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #667eea;
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: #764ba2;
+      margin: 1.5rem 0 0.75rem;
+      font-size: 1.2rem;
+    }
+    p { margin: 1rem 0; }
+    ul, ol {
+      margin: 1rem 0 1rem 2rem;
+      padding-left: 1rem;
+    }
+    li { margin: 0.5rem 0; }
+    code {
+      background: #f3f4f6;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      color: #666;
+    }
+    .callout {
+      background: #efffff;
+      border-left: 4px solid #667eea;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+    .callout strong { color: #667eea; }
+    a { color: #667eea; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Notion for Interior Designers: Complete Project Management System</h1>
+    <div class="meta">Published March 2026 | 11 minute read</div>
+  </header>
+
+  <main>
+    <article>
+      <p>Interior designers manage multiple projects simultaneously, juggling design concepts, material selections, supplier relationships, client approvals, budgets, timelines, and installation details. Many designers rely on scattered Figma files, mood board PDFs, spreadsheets for budgets, and email chains for approvals—a recipe for confusion and scope creep.</p>
+
+      <p><strong>Notion offers a unified workspace where every project, client, material, and deadline lives in one place—with a beautiful client portal for approvals.</strong></p>
+
+      <div class="callout">
+        <strong>💡 The Core Problem:</strong> Without a central system, you can't see which projects are over budget, which clients are waiting for approvals, or which materials have arrived. Design software (Figma) and project management (Asana) stay separate, forcing you to context-switch constantly.
+      </div>
+
+      <h2>Why Notion for Interior Design?</h2>
+
+      <p>Notion gives designers:</p>
+
+      <ul>
+        <li><strong>Unified project dashboard:</strong> All active projects with status, budget, timeline, and next milestone at a glance</li>
+        <li><strong>Design concept gallery:</strong> Mood boards, inspiration images, color palettes, and approved design direction in one gallery</li>
+        <li><strong>Material & product tracker:</strong> Every furniture item, fixture, finish with supplier links, pricing, lead times, and approval status</li>
+        <li><strong>Client approval workflow:</strong> Design options presented side-by-side; clients approve/reject; prevents endless revisions</li>
+        <li><strong>Budget management:</strong> Real-time tracking by category (furniture, labor, materials, decor); alerts prevent overruns</li>
+        <li><strong>Vendor database:</strong> Furniture stores, contractors, electricians with ratings, pricing, and contact info</li>
+        <li><strong>Professional client portal:</strong> Clients see design concepts, timeline, budget, and approve decisions without seeing your internal notes</li>
+        <li><strong>Zero learning curve:</strong> Unlike Houzz Pro ($80-200/month) which requires training, Notion is intuitive</li>
+      </ul>
+
+      <h2>Core Databases for Interior Design</h2>
+
+      <h3>1. Projects (The Hub)</h3>
+
+      <p>Master record for each design engagement:</p>
+
+      <ul>
+        <li>Project name (e.g., "Johnson Master Bedroom Renovation")</li>
+        <li>Client (link to Clients database)</li>
+        <li>Project type (residential, commercial, hospitality, staging)</li>
+        <li>Budget (total and by category: furniture, labor, materials, decor, contingency)</li>
+        <li>Timeline (start date, design phase end, ordering deadline, installation date)</li>
+        <li>Scope (number of rooms, square footage, design style)</li>
+        <li>Status (discovery, design, ordering, installation, complete)</li>
+        <li>Designer assigned</li>
+      </ul>
+
+      <h3>2. Clients</h3>
+
+      <ul>
+        <li>Client name and contact info</li>
+        <li>Projects (linked to Projects database for multi-project clients)</li>
+        <li>Design preferences (style, colors, budget range)</li>
+        <li>Decision-making style (quick/deliberate)</li>
+        <li>Communication preference (email, phone, Zoom)</li>
+        <li>Total lifetime value (rollup from project budgets)</li>
+      </ul>
+
+      <h3>3. Design Concepts & Mood Boards</h3>
+
+      <ul>
+        <li>Project (link)</li>
+        <li>Concept name (e.g., "Warm Minimalist Option A")</li>
+        <li>Description (design direction, reasoning)</li>
+        <li>Mood board gallery (images embedded or linked)</li>
+        <li>Color palette (with hex codes)</li>
+        <li>Style references</li>
+        <li>Status (draft, presented, approved, rejected)</li>
+        <li>Client feedback</li>
+      </ul>
+
+      <h3>4. Materials & Product Selection</h3>
+
+      <ul>
+        <li>Project (link)</li>
+        <li>Category (furniture, flooring, paint, fixtures, decor)</li>
+        <li>Item name and description</li>
+        <li>Supplier and product link</li>
+        <li>Price</li>
+        <li>Lead time (when will it arrive?)</li>
+        <li>Specifications (dimensions, color, material)</li>
+        <li>Approval status (proposed, approved, rejected, on order, delivered)</li>
+        <li>Client decision</li>
+      </ul>
+
+      <h3>5. Room-by-Room Breakdown</h3>
+
+      <p>(For larger projects)</p>
+
+      <ul>
+        <li>Project (link)</li>
+        <li>Room name</li>
+        <li>Dimensions and layout</li>
+        <li>Color scheme</li>
+        <li>Flooring material</li>
+        <li>Lighting plan</li>
+        <li>Furniture placement (link to 3D layout or sketch)</li>
+        <li>Materials selected for this room (linked to Materials database)</li>
+      </ul>
+
+      <h3>6. Project Timeline & Milestones</h3>
+
+      <ul>
+        <li>Project (link)</li>
+        <li>Milestone name (e.g., "Client approves design concept")</li>
+        <li>Due date</li>
+        <li>Milestone type (design, approval, ordering, delivery, installation)</li>
+        <li>Status (pending, in progress, completed)</li>
+        <li>Owner (who is responsible?)</li>
+      </ul>
+
+      <h3>7. Budget Tracker</h3>
+
+      <ul>
+        <li>Project (link)</li>
+        <li>Category (furniture, labor, materials, decor, contingency)</li>
+        <li>Item name</li>
+        <li>Budgeted amount</li>
+        <li>Actual cost (updates as invoices arrive)</li>
+        <li>Status (estimated, confirmed, invoiced, paid)</li>
+      </ul>
+
+      <h3>8. Vendors & Suppliers</h3>
+
+      <ul>
+        <li>Vendor name and category (furniture store, contractor, electrician, painter)</li>
+        <li>Contact person and phone/email</li>
+        <li>Services offered</li>
+        <li>Typical pricing or rate</li>
+        <li>Rating and notes from past projects</li>
+        <li>Insurance/license (contractor verification)</li>
+      </ul>
+
+      <h2>Key Views for Designers</h2>
+
+      <h3>Project Dashboard Kanban</h3>
+
+      <p>Group Projects by status: Discovery → Design → Ordering → Installation → Complete. Drag to update.</p>
+
+      <p>Why: Instant visual of pipeline; see bottlenecks.</p>
+
+      <h3>Design Concepts Gallery</h3>
+
+      <p>Gallery view of Design Concepts with mood board images large and centered.</p>
+
+      <p>Why: Beautiful presentation for scrolling through concepts; clients love this.</p>
+
+      <h3>Materials by Project</h3>
+
+      <p>Filter Materials database by Project. Group by category. Show approval status with color-coding.</p>
+
+      <p>Why: See all materials for a project; track which are approved, pending, or rejected.</p>
+
+      <h3>Budget by Project</h3>
+
+      <p>Rollup in Projects database: Sum all Budget items. Highlight if actual ≥ budgeted.</p>
+
+      <p>Why: Never be surprised by cost overruns; client stays informed.</p>
+
+      <h3>Timeline Calendar</h3>
+
+      <p>Calendar view of Milestones, sorted by due date. Color-code by project.</p>
+
+      <p>Why: See all deadlines; coordinate across multiple projects.</p>
+
+      <h3>Material Approval Pipeline</h3>
+
+      <p>Filter Materials to show Status = "Proposed" or "Pending Client Decision". Track stuck approvals.</p>
+
+      <p>Why: Identify which approvals are holding up ordering.</p>
+
+      <h2>Professional Client Portal</h2>
+
+      <p>One of Notion's superpowers for designers is the ability to share a read-only client view. Create a shared page for each client with:</p>
+
+      <ul>
+        <li>Design Concepts gallery (they see mood boards, not your internal notes)</li>
+        <li>Timeline (what's happening when)</li>
+        <li>Budget (transparency builds trust)</li>
+        <li>Approved materials list (a record of decisions)</li>
+        <li>Approval form (submit feedback on design options directly)</li>
+      </ul>
+
+      <p>This single shared page prevents 50 email chains and keeps clients engaged.</p>
+
+      <h2>Real Example: Freelance Designer</h2>
+
+      <p>Maya is a freelance interior designer managing 8 active projects ranging from small bedroom refreshes to full home renovations. Before Notion:</p>
+
+      <ul>
+        <li>Mood boards were scattered in Figma folders and Pinterest</li>
+        <li>Material selections and prices were in Google Sheets</li>
+        <li>Client approvals happened via email (impossible to track)</li>
+        <li>Budgets were estimates; actual costs tracked in separate accounting software</li>
+        <li>Every client asked "where are we in the timeline?"</li>
+      </ul>
+
+      <p>With Notion, Maya now:</p>
+
+      <ul>
+        <li><strong>Morning:</strong> Checks timeline view, sees two material approvals due from clients today</li>
+        <li><strong>Design phase:</strong> Creates design concepts in Notion, shares client portal link, clients approve/reject directly</li>
+        <li><strong>Ordering phase:</strong> Adds all materials to tracker with supplier links and lead times; knows exact delivery dates</li>
+        <li><strong>Budget tracking:</strong> As invoices come in, updates actual costs; Notion flags if a project is approaching budget limit</li>
+        <li><strong>Installation:</strong> Punch-list checklist ensures nothing is missed</li>
+      </ul>
+
+      <p>Time saved: ~6 hours per week on coordination, approval tracking, and budget management. Clients are happier because they can see progress anytime.</p>
+
+      <div class="callout">
+        <strong>🎯 The Real Win:</strong> Maya stopped losing track of approvals and budget overruns. Clients trust her more because they have visibility into the project. She can take on more concurrent projects without stress.
+      </div>
+
+      <h2>Pro Tips for Interior Designers</h2>
+
+      <ul>
+        <li><strong>Color-code projects by phase:</strong> Red = urgent, yellow = on track, green = complete. Scan at a glance.</li>
+        <li><strong>Link inspiration images:</strong> Every mood board should link to source (Pinterest, brand website) for client reference.</li>
+        <li><strong>Create material comparison tables:</strong> Show 3 sofa options side-by-side: style, color, price, lead time. Clients decide faster.</li>
+        <li><strong>Punch-list template:</strong> Installation day checklist prevents "we forgot to hang light fixtures."</li>
+        <li><strong>Vendor comparison:</strong> When getting contractor quotes, create a Notion table comparing price, timeline, and reviews. Share with client.</li>
+        <li><strong>Project portfolio:</strong> Archive completed projects by year/style. Build a visual case study database for marketing.</li>
+      </ul>
+
+      <h2>Common Designer Mistakes to Avoid</h2>
+
+      <ul>
+        <li><strong>Scope creep:</strong> Add a "Change Order" field. Track "client asked for extra thing." Update budget accordingly.</li>
+        <li><strong>Delivery surprises:</strong> Update material status religiously. When fabric arrives, mark it "delivered" so team knows.</li>
+        <li><strong>Budget surprises:</strong> Review budget health weekly. If actual > budget by 10%, flag for client conversation immediately.</li>
+        <li><strong>Lost approvals:</strong> Use the client portal form. Don't accept approvals via email; they disappear.</li>
+      </ul>
+
+      <h2>Integration Ideas</h2>
+
+      <ul>
+        <li><strong>Zapier:</strong> When timeline milestone is due tomorrow, send yourself Slack reminder</li>
+        <li><strong>Email integration:</strong> Forward vendor quotes to a Notion database (Zapier + forwarding address)</li>
+        <li><strong>Google Drive:</strong> Link 3D floor plans, renderings, and design documents to projects</li>
+        <li><strong>Figma embed:</strong> Embed mood boards directly from Figma into Notion client portal</li>
+      </ul>
+
+      <h2>Comparison: Notion vs. Design Software</h2>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+        <tr style="background: #f3f4f6;">
+          <th style="text-align: left; padding: 0.75rem; border: 1px solid #ddd;">Feature</th>
+          <th style="text-align: left; padding: 0.75rem; border: 1px solid #ddd;">Notion</th>
+          <th style="text-align: left; padding: 0.75rem; border: 1px solid #ddd;">Houzz Pro</th>
+          <th style="text-align: left; padding: 0.75rem; border: 1px solid #ddd;">Asana</th>
+        </tr>
+        <tr>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Cost</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">One-time template</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">$80-200/month</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">$10-30/month</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Project management</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Full</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Limited</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Full</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Mood board gallery</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Built-in</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Built-in</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✗ No</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Budget tracking</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Custom</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Basic</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Basic</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Client portal</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Beautiful</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">✓ Good</td>
+          <td style="padding: 0.75rem; border: 1px solid #ddd;">Limited</td>
+        </tr>
+      </table>
+
+      <h2>Conclusion</h2>
+
+      <p>Interior design projects are complex: many stakeholders, many moving parts, high budgets, long timelines. A professional project management system isn't optional—it's survival.</p>
+
+      <p>Notion provides that system without the expense or learning curve of specialized design software. Start with the template, customize for your project types, and watch your project coordination and client satisfaction improve immediately.</p>
+
+      <div class="callout">
+        <strong>Ready to organize your design practice?</strong> Download the Interior Designer & Architect Project Management Template and manage your first project in Notion this week.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eli Chen Studio. Notion templates for professionals.</p>
+  </footer>
+</body>
+</html>
