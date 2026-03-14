@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion for Yoga Instructors & Wellness Professionals: Studio & Class Management System</title>
+    <meta name="description" content="Master yoga studio operations with Notion. Class schedules, student rosters, payment tracking, and wellness content library for yoga teachers and instructors.">
+    <meta name="keywords" content="notion for yoga instructors, class management, student tracking, yoga studio template, wellness">
+    <meta name="author" content="Eli Chen Studio">
+    <meta property="og:title" content="Notion for Yoga Instructors">
+    <meta property="og:description" content="Complete system for managing classes, students, payments, and wellness programs from one workspace">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #c0392b;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #c0392b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #c0392b;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background: #fadbd8;
+            padding: 20px;
+            border-left: 4px solid #e74c3c;
+            margin: 20px 0;
+        }
+        .cta {
+            background: #f5b7b1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .cta a {
+            background: #e74c3c;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background: #c0392b;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-q {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+        strong {
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="meta">Posted on March 14, 2026 | 10 min read</p>
+            <h1>Notion for Yoga Instructors & Wellness Professionals: Studio & Class Management System</h1>
+            <p class="meta">Master class schedules, student rosters, payments, and wellness programs from a single workspace</p>
+        </header>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> Yoga teachers and wellness professionals juggle multiple class schedules, hundreds of students, varying payment models, and wellness program tracking. This guide shows you how to build a Notion system that consolidates student management, tracks attendance and progress, automates payments, and provides personalized wellness tracking—so you can focus on teaching and serving your students.
+        </div>
+
+        <h2>The Yoga Instructor's Challenge</h2>
+        <p>Whether you're teaching at a studio or running an independent practice, you're dealing with:</p>
+        <ul>
+            <li><strong>Scattered student info:</strong> Names, emails, phone numbers, preferences scattered across texts, spreadsheets, and Instagram DMs</li>
+            <li><strong>Attendance chaos:</strong> No clear view of who's consistently showing up vs. who quit</li>
+            <li><strong>Payment confusion:</strong> Mix of class passes, monthly subscriptions, drop-in rates, and barter arrangements</li>
+            <li><strong>Limited visibility into student progress:</strong> Hard to track who's improving, who needs modifications, who might need one-on-one attention</li>
+            <li><strong>Personalization at scale:</strong> Can't remember individual student injuries, preferences, or goals when teaching large classes</li>
+            <li><strong>Marketing friction:</strong> Manually texting or emailing class updates to 100+ students</li>
+            <li><strong>Revenue leakage:</strong> Forgotten payments, class passes that expired without being used, unclear billing</li>
+        </ul>
+
+        <h2>Why Notion Solves This for Yoga Professionals</h2>
+        <p>Notion becomes your studio command center because it:</p>
+        <ul>
+            <li><strong>Centralizes all student data:</strong> One place for names, contact info, preferences, goals, and medical needs</li>
+            <li><strong>Tracks attendance:</strong> See who's consistent, who's lapsed, and create win-back campaigns</li>
+            <li><strong>Automates billing:</strong> Class passes, subscriptions, and drop-in tracking with payment reminders</li>
+            <li><strong>Supports personalization:</strong> Pull up student profiles before class to remember modifications and progress</li>
+            <li><strong>Enables progress tracking:</strong> Students can log their practice, goals, and breakthroughs</li>
+            <li><strong>Scales communication:</strong> Send class reminders, wellness tips, and updates to segments of students automatically</li>
+            <li><strong>Creates accountability:</strong> Students see their attendance, progress, and payment status in a shared view</li>
+        </ul>
+
+        <h2>The Notion System: Core Architecture for Yoga Studios</h2>
+        <p>A production-ready yoga studio workspace contains 6 core databases:</p>
+
+        <h3>1. Student Roster Database</h3>
+        <p>Complete student information and relationship tracking.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Student Name:</strong> Text</li>
+            <li><strong>Email & Phone:</strong> Email and phone number fields</li>
+            <li><strong>Status:</strong> Select (Active, Inactive, On Break, VIP)</li>
+            <li><strong>Experience Level:</strong> Select (Beginner, Intermediate, Advanced)</li>
+            <li><strong>Medical Notes:</strong> Rich text (injuries, disabilities, modifications needed)</li>
+            <li><strong>Personal Goals:</strong> Rich text (flexibility, strength, balance, healing, etc.)</li>
+            <li><strong>Preferred Class Times:</strong> Multi-select (morning, evening, weekend)</li>
+            <li><strong>Preferred Styles:</strong> Multi-select (Vinyasa, Hatha, Restorative, Yin, Hot Yoga, etc.)</li>
+            <li><strong>Referral Source:</strong> Select (Friend, Google, Instagram, Studio Walk-in, Other)</li>
+            <li><strong>Emergency Contact:</strong> Text (name and phone)</li>
+            <li><strong>Classes Attended:</strong> Relation to Class Attendance database</li>
+            <li><strong>Total Classes Attended:</strong> Rollup count</li>
+            <li><strong>Last Class Date:</strong> Rollup showing most recent attendance</li>
+            <li><strong>Current Payment Status:</strong> Status field (Paid, Overdue, Trial, Expired)</li>
+            <li><strong>Notes:</strong> Rich text (personality quirks, conversation topics, achievements)</li>
+        </ul>
+
+        <h3>2. Class Schedule Database</h3>
+        <p>All yoga classes offered and their recurring schedules.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Class Name:</strong> Text (e.g., "Monday Morning Vinyasa")</li>
+            <li><strong>Class Style:</strong> Select (Vinyasa, Hatha, Restorative, Yin, Kundalini, etc.)</li>
+            <li><strong>Level:</strong> Select (All Levels, Beginner-Friendly, Intermediate, Advanced)</li>
+            <li><strong>Instructor:</strong> Person field (if multiple instructors)</li>
+            <li><strong>Day of Week:</strong> Select (Monday, Tuesday, etc.)</li>
+            <li><strong>Time:</strong> Text or time field (6:00 AM, 7:30 PM, etc.)</li>
+            <li><strong>Duration (minutes):</strong> Number (45, 60, 75, 90)</li>
+            <li><strong>Location/Studio Room:</strong> Text (in-person, online, etc.)</li>
+            <li><strong>Max Students:</strong> Number (class capacity)</li>
+            <li><strong>Currently Enrolled:</strong> Rollup count</li>
+            <li><strong>Open Spots:</strong> Formula (Max - Currently Enrolled)</li>
+            <li><strong>Class Price (Drop-in):</strong> Currency</li>
+            <li><strong>Class Roster:</strong> Relation to Student database (who's signed up)</li>
+            <li><strong>Next 10 Dates:</strong> Rollup or relation to upcoming class instances</li>
+            <li><strong>Class Theme/Focus:</strong> Rich text (theme for this month's classes)</li>
+        </ul>
+
+        <h3>3. Class Attendance Tracker</h3>
+        <p>Each actual class session and who attended.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Date:</strong> Calendar field</li>
+            <li><strong>Class:</strong> Relation to Class Schedule database</li>
+            <li><strong>Instructor:</strong> Person field</li>
+            <li><strong>Attendance List:</strong> Multi-select relation to Student database (who showed up)</li>
+            <li><strong>Head Count:</strong> Rollup count</li>
+            <li><strong>Notes on Class:</strong> Rich text (theme, what went well, adjustments for next time)</li>
+            <li><strong>Guest Instructor Notes:</strong> Rich text (guest feedback or observations)</li>
+        </ul>
+
+        <h3>4. Payment & Class Pass Tracker</h3>
+        <p>Billing, class passes, and revenue tracking.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Student:</strong> Relation to Student database</li>
+            <li><strong>Payment Type:</strong> Select (Drop-in, Class Pass, Monthly Subscription, Private Session, Retreat)</li>
+            <li><strong>Amount Paid:</strong> Currency</li>
+            <li><strong>Date Paid:</strong> Date field</li>
+            <li><strong>Class Passes Purchased:</strong> Number (5-pack, 10-pack, etc.)</li>
+            <li><strong>Passes Remaining:</strong> Number</li>
+            <li><strong>Pass Expiration Date:</strong> Date field</li>
+            <li><strong>Status:</strong> Status field (Paid, Pending, Overdue, Expired, Refunded)</li>
+            <li><strong>Payment Method:</strong> Select (Venmo, PayPal, Cash, Credit Card, etc.)</li>
+            <li><strong>Notes:</strong> Rich text (discount codes, promo reasons, etc.)</li>
+        </ul>
+
+        <h3>5. Student Progress & Wellness Tracker</h3>
+        <p>Track student progress, goals, and wellness journey.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Student:</strong> Relation to Student database</li>
+            <li><strong>Entry Date:</strong> Date field</li>
+            <li><strong>Practice Type:</strong> Select (In-class, Home Practice, Meditation, Other)</li>
+            <li><strong>Duration (minutes):</strong> Number</li>
+            <li><strong>How They're Feeling:</strong> Select (Energized, Calm, Sore, Struggling, Breakthrough, etc.)</li>
+            <li><strong>Progress Notes:</strong> Rich text (improvements noticed, challenges, questions)</li>
+            <li><strong>Photos/Videos:</strong> File field (pose progress photos, if student wants to track visually)</li>
+            <li><strong>Related Classes:</strong> Relation to classes they took</li>
+        </ul>
+
+        <h3>6. Wellness Resources & Content Library</h3>
+        <p>Reusable yoga sequences, meditation audio, wellness articles, and educational content.</p>
+        <p><strong>Fields:</strong></p>
+        <ul>
+            <li><strong>Content Title:</strong> Text</li>
+            <li><strong>Content Type:</strong> Select (Yoga Sequence, Meditation, Blog Post, Video, Affirmation)</li>
+            <li><strong>Duration:</strong> Text (15 min, 30 min, 45 min, etc.)</li>
+            <li><strong>Level:</strong> Select (Beginner, Intermediate, Advanced)</li>
+            <li><strong>Content Focus:</strong> Multi-select (Flexibility, Strength, Balance, Stress Relief, Better Sleep, etc.)</li>
+            <li><strong>Link/File:</strong> URL or file field</li>
+            <li><strong>Description:</strong> Rich text</li>
+            <li><strong>Used in Classes:</strong> Relation to Class Schedule (which classes use this sequence)</li>
+        </ul>
+
+        <h2>Pro Workflows: Automations That Save 5+ Hours/Week</h2>
+
+        <h3>Weekly Class Reminders</h3>
+        <p>Use Zapier to send automatic text/email reminders to students the day before their preferred classes:</p>
+        <ul>
+            <li>Filter students by preferred class times and styles</li>
+            <li>Auto-send: "Your Monday morning Vinyasa class is tomorrow at 6 AM. See you there!"</li>
+            <li>Track who responds or attends to measure engagement</li>
+        </ul>
+
+        <h3>Attendance Tracking & Win-Back Campaign</h3>
+        <p>Create a filter for students not seen in 4+ weeks:</p>
+        <ul>
+            <li>Auto-generate win-back email: "We miss you! Come try our new Friday restorative class this week"</li>
+            <li>Offer specific incentive (free class, discount on pass)</li>
+            <li>Track who returns</li>
+        </ul>
+
+        <h3>Monthly Revenue Report</h3>
+        <p>Notion rollups automatically calculate:</p>
+        <ul>
+            <li>Total class revenue (drop-in + passes + subscriptions)</li>
+            <li>Revenue per class</li>
+            <li>New vs. returning student revenue</li>
+            <li>Export for bookkeeping</li>
+        </ul>
+
+        <h3>Class Pass Expiration Alerts</h3>
+        <p>Filter for passes expiring within 7 days:</p>
+        <ul>
+            <li>Auto-email students: "Your 5-class pass expires in 7 days! Use your remaining classes or renew your pass"</li>
+            <li>Reduce pass waste and recover revenue</li>
+        </ul>
+
+        <h3>Pre-Class Student Profile Cards</h3>
+        <p>Create filtered views for each class showing:</p>
+        <ul>
+            <li>Which students are attending this class</li>
+            <li>Their experience level, goals, and medical notes</li>
+            <li>Modifications they need</li>
+            <li>Personal connection points ("Asked about knee injury last week")</li>
+            <li>Pull these up on phone/tablet before class to personalize teaching</li>
+        </ul>
+
+        <h2>Implementation: 4-Week Rollout</h2>
+
+        <h3>Week 1: Foundation (2-3 hours)</h3>
+        <ul>
+            <li>Create Student Roster database and add all current students</li>
+            <li>Create Class Schedule database with all your recurring classes</li>
+        </ul>
+
+        <h3>Week 2: Operations (2-3 hours)</h3>
+        <ul>
+            <li>Create Class Attendance Tracker</li>
+            <li>Log last month of attendance (one-time data entry)</li>
+            <li>Start tracking attendance prospectively</li>
+        </ul>
+
+        <h3>Week 3: Billing (2 hours)</h3>
+        <ul>
+            <li>Create Payment & Class Pass Tracker</li>
+            <li>Migrate existing payment records</li>
+            <li>Test payment tracking workflow</li>
+        </ul>
+
+        <h3>Week 4: Scaling (2 hours)</h3>
+        <ul>
+            <li>Add Progress Tracker for students wanting to log practice</li>
+            <li>Create student-accessible view for attendance and progress</li>
+            <li>Set up Zapier automations (reminders, win-back campaigns)</li>
+        </ul>
+
+        <h2>Common Questions</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <p class="faq-q">Q: Can my students see and update their own progress in Notion?</p>
+                <p>A: Yes. Share a read-only/limited-edit view of the Progress Tracker with students. They can log their home practice, but you control what they see (attendance, personal progress, not business data).</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: How do I handle both online and in-person classes?</p>
+                <p>A: Create separate entries in Class Schedule or add a "Format" field (In-Person, Online, Hybrid). Attendance tracking works the same way.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: Can Notion automatically send payment reminders?</p>
+                <p>A: Yes, via Zapier. Set up a workflow that checks Payment Tracker for Overdue status and sends email reminders. Cost: $10-20/month for Zapier integration.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-q">Q: How do I track private sessions or yoga therapy separately from group classes?</p>
+                <p>A: Add a "Session Type" field to Payment Tracker (Group Class, Private Session, Therapy). Create separate enrollment database for private sessions if needed.</p>
+            </div>
+        </div>
+
+        <h2>Why This System Works</h2>
+        <p>Yoga studios and wellness practices succeed when:</p>
+        <ul>
+            <li><strong>Students feel personally known</strong> because you remember their goals and modifications</li>
+            <li><strong>Attendance is consistent</strong> because reminders and win-back campaigns work</li>
+            <li><strong>Revenue is predictable</strong> because billing and pass tracking is clear</li>
+            <li><strong>You have time to teach</strong> not spend hours managing spreadsheets</li>
+            <li><strong>Students see their progress</strong> and feel motivated to continue</li>
+        </ul>
+
+        <div class="cta">
+            <p><strong>Ready to take your yoga studio online?</strong></p>
+            <p>Get our pre-built Yoga Instructor & Wellness Studio template with student management, class scheduling, payment tracking, and progress monitoring—all integrated and ready to scale.</p>
+            <a href="https://etsy.com/shop/EliChenStudio?search_query=yoga%20instructor" target="_blank">Get the Template on Etsy</a>
+        </div>
+
+        <h2>Next Steps</h2>
+        <ol>
+            <li><strong>List all your students</strong> and their attendance patterns</li>
+            <li><strong>Document your class schedule</strong> (days, times, styles)</li>
+            <li><strong>Set up student tracking</strong> starting this week</li>
+            <li><strong>Move existing payment records</strong> into the system</li>
+            <li><strong>Automate reminders</strong> to improve attendance and retention</li>
+        </ol>
+
+        <footer>
+            <p><strong>Eli Chen Studio</strong> creates production-ready Notion templates for wellness professionals. This guide is part of our mission to help yoga teachers scale their practice while maintaining the personal connection that makes yoga special.</p>
+            <p>Questions? <a href="mailto:eli@elicchenstudio.com">Email us</a> or check our <a href="https://github.com/Wasuma/eli-chen-studio/blob/main/FAQ.md">FAQ</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
