@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion for Event Planners: The Complete Coordination System | Blog</title>
+  <meta name="description" content="Build a complete event planning system in Notion. Manage clients, vendors, timelines, budgets, guest lists, and day-of execution—all in one workspace for weddings, corporate events, and parties.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f9fafb;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    header .meta { font-size: 0.95rem; opacity: 0.9; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    article {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #667eea;
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: #764ba2;
+      margin: 1.5rem 0 0.75rem;
+      font-size: 1.2rem;
+    }
+    p { margin: 1rem 0; }
+    ul, ol {
+      margin: 1rem 0 1rem 2rem;
+      padding-left: 1rem;
+    }
+    li { margin: 0.5rem 0; }
+    code {
+      background: #f3f4f6;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      color: #666;
+    }
+    .callout {
+      background: #efffff;
+      border-left: 4px solid #667eea;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+    .callout strong { color: #667eea; }
+    a { color: #667eea; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Notion for Event Planners: The Complete Coordination System</h1>
+    <div class="meta">Published March 2026 | 10 minute read</div>
+  </header>
+
+  <main>
+    <article>
+      <p>Event planning requires juggling multiple moving pieces: clients, vendors, timelines, budgets, guest lists, and countless details that can derail even the best-prepared coordinator. Most event planners rely on spreadsheets, separate apps, and scattered documents. Notion offers a better way—a single system to orchestrate every aspect of your events.</p>
+
+      <p><strong>This guide shows you how to build a complete event planning system in Notion, from initial client inquiry through post-event follow-up.</strong></p>
+
+      <h2>Why Notion for Event Planning?</h2>
+
+      <p>Event planners manage multiple simultaneous projects, each with different clients, vendors, deadlines, and budgets. Traditional event planning software like Tona or Aisle charges $15-25/month. Spreadsheets are fragmented and error-prone. Notion solves this with:</p>
+
+      <ul>
+        <li><strong>One workspace</strong> for all events, clients, vendors, timelines, and budgets</li>
+        <li><strong>Flexible databases</strong> that connect all related information (clients → events → vendors → timelines)</li>
+        <li><strong>Multiple views</strong> of the same data (calendar view for deadlines, Kanban for workflow, table for details)</li>
+        <li><strong>Real-time collaboration</strong> with team members and clients</li>
+        <li><strong>One-time cost</strong> (buy the template once; use unlimited events)</li>
+      </ul>
+
+      <div class="callout">
+        <strong>💡 Key Insight:</strong> Your event planning system is only as good as your ability to see what's due when. Notion's multiple views solve this instantly.
+      </div>
+
+      <h2>Core Databases You Need</h2>
+
+      <h3>1. Clients</h3>
+
+      <p>Master database for all event clients. Fields should include:</p>
+
+      <ul>
+        <li>Client name and contact information</li>
+        <li>Event type (wedding, corporate, birthday, etc.)</li>
+        <li>Event date</li>
+        <li>Budget allocated</li>
+        <li>Communication preference (email, phone, Zoom)</li>
+        <li>Decision-making style (quick decisions vs. deliberate)</li>
+        <li>Contract signed? (Yes/No status)</li>
+        <li>Payment terms (50% deposit, balance on completion)</li>
+      </ul>
+
+      <p>Pro tip: Add a relationship field linking each client to their Events database. This way, clients with multiple events are automatically grouped.</p>
+
+      <h3>2. Events</h3>
+
+      <p>Each client's event is a separate record. Include:</p>
+
+      <ul>
+        <li>Event name (e.g., "Johnson Wedding" or "TechCorp Conference 2026")</li>
+        <li>Event date and time</li>
+        <li>Location/venue</li>
+        <li>Guest count estimate</li>
+        <li>Event status (Planning, In Progress, Complete, Archived)</li>
+        <li>Budget (total, with category breakdown)</li>
+        <li>Timeline phases (Discovery, Design, Ordering, Installation, Execution, Follow-up)</li>
+        <li>Link to Client database</li>
+      </ul>
+
+      <h3>3. Vendors & Suppliers</h3>
+
+      <p>Track all vendor relationships:</p>
+
+      <ul>
+        <li>Vendor name and category (catering, photography, florist, rentals, etc.)</li>
+        <li>Contact person and phone/email</li>
+        <li>Quoted price for this event</li>
+        <li>Contract status (quoted, confirmed, completed)</li>
+        <li>Delivery/service date</li>
+        <li>Rating and notes from previous events</li>
+        <li>Link to Event</li>
+      </ul>
+
+      <h3>4. Timeline & Milestones</h3>
+
+      <p>Critical dates and deadlines:</p>
+
+      <ul>
+        <li>Milestone (e.g., "Approve floral design" or "Confirm guest count")</li>
+        <li>Due date</li>
+        <li>Owner (who is responsible?)</li>
+        <li>Status (pending, in progress, completed)</li>
+        <li>Link to Event and related Vendor (if applicable)</li>
+      </ul>
+
+      <h3>5. Budget Tracker</h3>
+
+      <p>Categorized spending:</p>
+
+      <ul>
+        <li>Category (venue, catering, flowers, decor, rentals, services, contingency)</li>
+        <li>Item/vendor name</li>
+        <li>Budgeted amount</li>
+        <li>Actual amount (updated as invoices arrive)</li>
+        <li>Status (estimated, confirmed, paid, invoiced)</li>
+        <li>Link to Event</li>
+      </ul>
+
+      <h3>6. Guest List (for weddings & large events)</h3>
+
+      <ul>
+        <li>Guest name</li>
+        <li>Relationship to couple/host</li>
+        <li>Contact information</li>
+        <li>RSVP status (yes, no, pending)</li>
+        <li>Dietary restrictions</li>
+        <li>Plus-one (name/RSVP status)</li>
+        <li>Table assignment</li>
+        <li>Thank-you note sent? (Yes/No)</li>
+        <li>Link to Event</li>
+      </ul>
+
+      <h2>Essential Views for Event Planning</h2>
+
+      <h3>Timeline Calendar View</h3>
+
+      <p>Create a calendar view of your Timelines database, sorted by due date. Color-code by priority (red = urgent, yellow = approaching, green = on track).</p>
+
+      <p>Why: Instantly see all upcoming deadlines across all events. No missed dates ever.</p>
+
+      <h3>Active Events Kanban Board</h3>
+
+      <p>Group Events by status: Planning → Approved → Ordering → Executing → Complete. Drag events as they progress.</p>
+
+      <p>Why: Visual workflow of all events; easy to identify bottlenecks.</p>
+
+      <h3>Vendor Comparison Table</h3>
+
+      <p>Filter the Vendors database by event. Group by category (catering, florist, venue). Include quoted prices side-by-side.</p>
+
+      <p>Why: Client sees options; easy to compare before deciding.</p>
+
+      <h3>Budget by Event</h3>
+
+      <p>Create a rollup in the Events database that sums actual spending from the Budget Tracker. Highlight if spending exceeds budget.</p>
+
+      <p>Why: Prevent cost overruns; clients stay informed.</p>
+
+      <h2>Practical Setup Steps</h2>
+
+      <ol>
+        <li><strong>Create the core databases:</strong> Clients, Events, Vendors, Timeline, Budget, Guest List (for weddings)</li>
+        <li><strong>Link them together:</strong> Event → Client, Event → Vendors, Event → Timeline, Event → Budget, Event → Guests</li>
+        <li><strong>Build key views:</strong> Timeline calendar, Active events Kanban, Budget summary, Vendor comparison</li>
+        <li><strong>Set up templates:</strong> Create a "New Event" template that auto-generates related records (Budget table entry, Timeline checklist, etc.)</li>
+        <li><strong>Add checklists:</strong> For each event phase (discovery, design, ordering, execution, follow-up)</li>
+        <li><strong>Share with clients:</strong> Create a guest-access database of approved vendors, timeline, and budget (read-only)</li>
+      </ol>
+
+      <h2>Real Example: Wedding Planning in Notion</h2>
+
+      <p>Sarah is a freelance wedding coordinator managing 6 active weddings. She uses her Notion system to:</p>
+
+      <ul>
+        <li><strong>Track vendor deadlines:</strong> Color-coded timeline shows florist needs approval by Friday, caterer needs final headcount by Monday</li>
+        <li><strong>Manage budgets:</strong> One couple is $2,000 over budget; Notion highlights this, so Sarah can discuss options</li>
+        <li><strong>Coordinate teams:</strong> Day-of coordinator accesses read-only view of timeline, vendor contacts, and contingency plan</li>
+        <li><strong>Follow up:</strong> Post-wedding, she sends thank-you emails to vendors and asks clients for reviews</li>
+      </ul>
+
+      <p>All of this used to take her 5-8 hours of admin work per wedding. Now it's 1-2 hours, because everything is in one place.</p>
+
+      <div class="callout">
+        <strong>🎯 The Real Win:</strong> With 6 concurrent weddings at different stages, Notion gives Sarah the "helicopter view" she needs. She never misses a deadline, never double-books a vendor, and always knows her budget status.
+      </div>
+
+      <h2>Pro Tips for Event Planners</h2>
+
+      <ul>
+        <li><strong>Color-code by event type:</strong> Red for weddings, blue for corporate, green for private parties. Easier to scan at a glance.</li>
+        <li><strong>Use templates:</strong> Create a "New Event" button that auto-populates a checklist and budget for that event type (wedding vs. corporate vs. party have different checklists).</li>
+        <li><strong>Share strategically:</strong> Give clients a read-only view of their timeline and budget. This prevents "where are we?" emails.</li>
+        <li><strong>Track vendor ratings:</strong> After each event, rate vendors (catering quality, responsiveness, price fairness). Use this data when quoting for future events.</li>
+        <li><strong>Create day-of checklists:</strong> Hour-by-hour schedule with vendor arrival times, setup tasks, and contact numbers. Print or share with day-of coordinator.</li>
+        <li><strong>Link to contracts and documents:</strong> Every vendor record should link to their contract, insurance certificate, and receipt. Everything searchable.</li>
+      </ul>
+
+      <h2>Common Mistakes to Avoid</h2>
+
+      <ul>
+        <li><strong>Not linking databases:</strong> If Vendors exist separately from Events, you'll duplicate data and create inconsistencies.</li>
+        <li><strong>Too many fields:</strong> Start with essentials. You can add fields later if needed. Bloat kills adoption.</li>
+        <li><strong>No backup plan:</strong> Add a "Day-Of Contingency" field for each event (venue backup, catering backup, weather plan). Hope you don't need it.</li>
+        <li><strong>Ignoring follow-up:</strong> Post-event tasks (thank-yous, feedback, payment) are easy to forget. Build them into your timeline.</li>
+      </ul>
+
+      <h2>Next Level: Automation & Integrations</h2>
+
+      <p>Once your system is live, consider:</p>
+
+      <ul>
+        <li><strong>Zapier:</strong> Send yourself a Slack notification when a milestone is due tomorrow</li>
+        <li><strong>Email integration:</strong> Archive client emails in a Notion database (with Zapier + email forwarding)</li>
+        <li><strong>Calendar sync:</strong> Export your Notion timeline to Google Calendar so it's visible in your main schedule</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+
+      <p>Event planning is fundamentally about managing relationships, deadlines, and budgets across multiple simultaneous projects. Notion excels at this by giving you one searchable, linkable, multi-view system.</p>
+
+      <p>Whether you're a solo wedding coordinator, corporate event planner, or party planner managing 5-20 events at a time, Notion scales with you. No monthly subscriptions, no vendor lock-in, and complete control over your data.</p>
+
+      <p><strong>Start with the template.</strong> Duplicate it, customize for your event types, and manage your first event in it. You'll save hours and deliver better communication to clients.</p>
+
+      <div class="callout">
+        <strong>Ready to start?</strong> Download the complete Event Planner Master Template for Notion and have your system running in under an hour.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Eli Chen Studio. Notion templates for professionals.</p>
+  </footer>
+</body>
+</html>
